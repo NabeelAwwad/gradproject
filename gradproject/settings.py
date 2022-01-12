@@ -134,10 +134,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_URL = 'login'
-LOGOUT_REDIRECT_URL = 'home'
-LOGIN_REDIRECT_URL = 'home'
-AUTH_USER_MODEL = 'learning.User'
 
 MESSAGE_TAGS = {
 
@@ -150,3 +146,8 @@ MESSAGE_TAGS = {
 }
 
 django_heroku.settings(locals())
+
+LOGIN_URL = 'login'
+LOGOUT_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'home'
+AUTH_USER_MODEL = 'learning.User'
