@@ -1,1 +1,1 @@
-worker: python manage.py runserver 8000
+web: gunicorn gradproject.wsgi --log-file
