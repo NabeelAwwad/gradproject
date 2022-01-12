@@ -9,7 +9,7 @@ from django.contrib.auth import update_session_auth_hash
 from django.db.models import Q
 
 
-@login_required
+
 def home(request):
     student = request.user.student
     if not student.took_poll:
