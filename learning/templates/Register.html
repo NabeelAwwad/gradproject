@@ -1,8 +1,0 @@
-{% extends 'base.html' %}
-{% block content %}
-    <h2>Sign up</h2>
-    <p class="lead">Select below the type of account you want to create</p>
-  <a href="{% url 'student_register' %}" class="btn btn-student btn-lg text-dark" role="button">I'm a student</a>
-  <a href="{% url 'teacher_register' %}" class="btn btn-teacher btn-lg text-dark disabled" role="button">I'm a teacher</a>
-        <p>Note: The teacher registration is still in progress </p>
-{% endblock %}
