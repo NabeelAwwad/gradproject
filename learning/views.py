@@ -48,8 +48,7 @@ def home(request):
         misconceptions = misconceptions.filter(Q(material_type__exact=student.preferred_media[0])
                                                | Q(material_type__exact=student.preferred_media[1])
                                                | Q(material_type__exact=student.preferred_media[2]))
-    print("mats", materials)
-    print("misses", misconceptions)
+
     if not materials and student.student_skill != 9:
         student.student_skill += 1
         student.save()
