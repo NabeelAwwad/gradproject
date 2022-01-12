@@ -1,5 +1,5 @@
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 from learning.forms import UserRegisterForm, UserUpdateForm
 from django.shortcuts import render, redirect
 from learning.models import Question, Student, Poll, Material, User, Level, Score
@@ -17,14 +17,21 @@ def home(request):
     if not student.took_quiz:
         return redirect('quiz')
     preference = student.get_preferred_media_display()
+    learned = student.learned_material.all()
+    print('learned', learned)
     misconceptions = Material.objects.filter(level__skill_required__lt=student.student_skill)
     materials = Material.objects.filter(level__skill_required__exact=student.student_skill, material_length='L')
+    for mat in learned:
+        materials = materials.exclude(name__exact=mat.name)
     student_scores = Score.objects.filter(student=student)
     for score in student_scores:
         if score.score == 1:
             misconceptions = misconceptions.exclude(level=score.level, material_length__exact='L')
         elif score.score == 0 or score.score == 2:
             misconceptions = misconceptions.exclude(level=score.level)
+
+    for mat in learned:
+        misconceptions = misconceptions.exclude(name__exact=mat.name)
 
     if len(student.preferred_media) == 1:
         materials = materials.filter(material_type__exact=student.preferred_media)
@@ -41,13 +48,17 @@ def home(request):
         misconceptions = misconceptions.filter(Q(material_type__exact=student.preferred_media[0])
                                                | Q(material_type__exact=student.preferred_media[1])
                                                | Q(material_type__exact=student.preferred_media[2]))
-    print(materials)
-    print(misconceptions)
+    print("mats", materials)
+    print("misses", misconceptions)
+    if not materials and student.student_skill != 9:
+        student.student_skill += 1
+        student.save()
+        return redirect('home')
+
     if request.method == 'POST':
         for mat in materials:
             if mat.name in request.POST:
                 student.learned_material.add(mat)
-                student.student_skill += 1
                 student.save()
         for mat in misconceptions:
             if mat.name in request.POST:
@@ -160,7 +171,7 @@ def poll(request):
                     and (score_a - score_r) / score_sum > 0.1:
                 student.preferred_media = 'AK'
             elif abs((score_r - score_k) / score_sum) < 0.1 and (score_r - score_v) / score_sum > 0.1 \
-                    and (score_r - score_k) / score_sum > 0.1:
+                    and (score_r - score_a) / score_sum > 0.1:
                 student.preferred_media = 'RK'
             elif abs((score_v - score_r) / score_sum) < 0.1 and abs((score_v - score_a)) / score_sum < 0.1 \
                     and (score_v - score_k) / score_sum > 0.1:
@@ -266,4 +277,3 @@ def change_pass(request):
         'pass_form': pass_form
     }
     return render(request, 'change_pass.html', context)
-

@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="card float-end bg-gradiant rounded" style="width: 15rem;">
+    <div class="card float-end bg-gradiant rounded" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title">Welcome {{ user.username }}</h5>
             <div class="row ml-1 ">
@@ -37,10 +37,10 @@
         </ul>
     {% endfor %}
     {% endif %}
+    <h1 class="display-4">Extras</h1>
     {% if not misconceptions %}
-        <br>
+        <p class="lead"><strong>We found that you do not need any extra material to revise</strong></p>
     {% else %}
-        <h1 class="display-4">Extras</h1>
     <p class="lead">We noticed that you might have some misconceptions, here are some short recommendations to help you
     revise:</p>
     {% for mat in misconceptions %}
@@ -60,7 +60,7 @@
     <br>
     {% else %}
     <h2 class="display-4">Finished material</h2>
-    <p class="lead">Here are the material that you have finished so far:</p>
+        <p class="lead"><strong>Here are the material that you have finished so far:</strong></p>
     {% for mat in learned %}
         <p class="lead">✓ {{ mat.name }}</p>
     {% endfor %}
