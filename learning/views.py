@@ -278,7 +278,10 @@ def change_pass(request):
     return render(request, 'change_pass.html', context)
 
 def login_view(request):
+    if request.user.is_authenticated:
+        return redirect("home")
     if request.method == 'POST':
+
         auth_form = AuthenticationForm(data=request.POST)
         username = request.POST['username']
         password = request.POST['password']
