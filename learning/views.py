@@ -294,4 +294,4 @@ def login_view(request):
     context = {
         'auth_form': auth_form
     }
-    return render(request, 'login.html', context)
+    return render(request, 'Login.html', context)
