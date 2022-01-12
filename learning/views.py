@@ -4,7 +4,7 @@ from learning.forms import UserRegisterForm, UserUpdateForm
 from django.shortcuts import render, redirect
 from learning.models import Question, Student, Poll, Material, User, Level, Score
 from django.contrib import messages
-from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth.forms import PasswordChangeForm, AuthenticationForm
 from django.contrib.auth import update_session_auth_hash
 from django.db.models import Q
 
@@ -277,3 +277,22 @@ def change_pass(request):
         'pass_form': pass_form
     }
     return render(request, 'change_pass.html', context)
+
+def login_view(request):
+    if request.method == 'POST':
+        auth_form = AuthenticationForm(data=request.POST)
+        username = request.POST['username']
+        password = request.POST['password']
+        if auth_form.is_valid():
+            user = authenticate(request, username=username, password=password)
+            login(request, user)
+            return redirect('home')
+        else:
+            messages.error(request, "Please enter a correct username and password."
+                                    " Note that both fields may be case-sensitive.")
+    else:
+        auth_form = AuthenticationForm(data=request.POST)
+    context = {
+        'auth_form': auth_form
+    }
+    return render(request, 'login.html', context)

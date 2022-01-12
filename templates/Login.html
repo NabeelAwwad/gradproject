@@ -1,5 +1,27 @@
 {% extends 'base.html' %}
 
 {% block content %}
+   {% load crispy_forms_tags %}
+    <h2>Login</h2>
+    <form method="post" novalidate>
+        {% csrf_token %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert {{ message.tags }} m-2" id="msg" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+        {% for field in auth_form %}
+            <p>
+                {{ field.label_tag }}<br>
+                {{ field }}<br>
+                {% if field.help_text %}
+                    <p><small style="color: grey">{{ field.help_text }}</small></p>
+                {% endif %}
+            </p>
+        {% endfor %}
 
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
 {% endblock %}
