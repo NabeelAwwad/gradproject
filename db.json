@@ -1019,25 +1019,6 @@
   }
 },
 {
-  "model": "learning.student",
-  "pk": 1,
-  "fields": {
-    "preferred_media": "V",
-    "student_skill": 3.0,
-    "took_quiz": true,
-    "took_poll": false,
-    "learned_material": [
-      1,
-      2,
-      4,
-      9,
-      10,
-      18,
-      26
-    ]
-  }
-},
-{
   "model": "learning.question",
   "pk": 1,
   "fields": {
