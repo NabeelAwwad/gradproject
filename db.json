@@ -59,25 +59,6 @@
   }
 },
 {
-  "model": "learning.user",
-  "fields": {
-    "password": "pbkdf2_sha256$260000$VZGW34uyECamWbk2PaTqkS$FGGbHHYNOi1pa+PP7qoqyf78OdyClN5SIen8pWcUBxw=",
-    "last_login": "2022-01-13T15:36:30.975Z",
-    "is_superuser": false,
-    "username": "soon",
-    "first_name": "soon",
-    "last_name": "soon",
-    "email": "soon@example.com",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2022-01-13T15:36:30.756Z",
-    "is_student": true,
-    "is_teacher": false,
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
   "model": "learning.level",
   "pk": 1,
   "fields": {
@@ -1057,17 +1038,6 @@
   }
 },
 {
-  "model": "learning.student",
-  "pk": 14,
-  "fields": {
-    "preferred_media": "V",
-    "student_skill": 4.0,
-    "took_quiz": true,
-    "took_poll": true,
-    "learned_material": []
-  }
-},
-{
   "model": "learning.question",
   "pk": 1,
   "fields": {
@@ -1465,78 +1435,6 @@
     "op2": "ask my friend to tell me the directions.",
     "op3": "write down the street directions I need to remember.",
     "op4": "find out where the shop is in relation to somewhere I know."
-  }
-},
-{
-  "model": "learning.score",
-  "pk": 93,
-  "fields": {
-    "level": 1,
-    "student": 14,
-    "score": 2
-  }
-},
-{
-  "model": "learning.score",
-  "pk": 94,
-  "fields": {
-    "level": 2,
-    "student": 14,
-    "score": 2
-  }
-},
-{
-  "model": "learning.score",
-  "pk": 95,
-  "fields": {
-    "level": 3,
-    "student": 14,
-    "score": 1
-  }
-},
-{
-  "model": "learning.score",
-  "pk": 96,
-  "fields": {
-    "level": 4,
-    "student": 14,
-    "score": 0
-  }
-},
-{
-  "model": "learning.score",
-  "pk": 97,
-  "fields": {
-    "level": 5,
-    "student": 14,
-    "score": 0
-  }
-},
-{
-  "model": "learning.score",
-  "pk": 98,
-  "fields": {
-    "level": 6,
-    "student": 14,
-    "score": 0
-  }
-},
-{
-  "model": "learning.score",
-  "pk": 99,
-  "fields": {
-    "level": 7,
-    "student": 14,
-    "score": 0
-  }
-},
-{
-  "model": "learning.score",
-  "pk": 100,
-  "fields": {
-    "level": 8,
-    "student": 14,
-    "score": 0
   }
 }
 ]
