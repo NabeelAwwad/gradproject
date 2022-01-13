@@ -30,7 +30,7 @@
         <ul>
             <li>
             <p class="lead">{{ mat.name }}</p>
-            <a href="{{ mat.link }}" class="btn btn-md btn-primary">Link</a>
+            <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer" class="btn btn-md btn-primary">Link</a>
                 <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as finished</button>
             </li>
         {% endif %}
@@ -41,14 +41,14 @@
     {% if not misconceptions %}
         <p class="lead"><strong>We found that you do not need any extra material to revise</strong></p>
     {% else %}
-    <p class="lead">We noticed that you might have some misconceptions, here are some short recommendations to help you
-    revise:</p>
+    <p class="lead"><strong>We noticed that you might have some misconceptions, here are some short recommendations to help you
+        revise:</strong></p>
     {% for mat in misconceptions %}
         {% if mat not in learned %}
         <ul>
             <li>
             <p class="lead">{{ mat.name }}</p>
-            <a href="{{ mat.link }}" class="btn btn-md btn-primary">Link</a>
+            <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer" class="btn btn-md btn-primary">Link</a>
                 <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as finished</button>
             </li>
         {% endif %}

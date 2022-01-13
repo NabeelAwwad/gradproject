@@ -127,13 +127,13 @@
   "pk": 1,
   "fields": {
     "level": 1,
-    "name": "L1VS",
+    "name": "Introduction to numbering systems (Visual and short)",
     "material_type": "V",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://img.brainkart.com/imagebk34/khBRZq1.jpg"
   }
 },
 {
@@ -141,13 +141,13 @@
   "pk": 2,
   "fields": {
     "level": 1,
-    "name": "L1VL",
+    "name": "Introduction to numbering systems (Visual/long)",
     "material_type": "V",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://img.brainkart.com/imagebk34/khBRZq1.jpg"
   }
 },
 {
@@ -155,13 +155,13 @@
   "pk": 3,
   "fields": {
     "level": 1,
-    "name": "L1AS",
+    "name": "Introduction to numbering systems (Auditory/Short)",
     "material_type": "A",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.youtube.com/watch?app=desktop&v=0tDj7qRTPD8"
   }
 },
 {
@@ -169,13 +169,13 @@
   "pk": 4,
   "fields": {
     "level": 1,
-    "name": "L1AL",
+    "name": "Introduction to numbering systems (Auditory/long)",
     "material_type": "A",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.youtube.com/watch?app=desktop&v=0tDj7qRTPD8"
   }
 },
 {
@@ -183,13 +183,13 @@
   "pk": 5,
   "fields": {
     "level": 1,
-    "name": "L1RS",
+    "name": "Introduction to numbering systems (Read/short)",
     "material_type": "R",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.cs.utah.edu/~germain/PPS/Topics/numbering_systems.html"
   }
 },
 {
@@ -197,13 +197,13 @@
   "pk": 6,
   "fields": {
     "level": 1,
-    "name": "L1RL",
+    "name": "Introduction to numbering systems (Read/long)",
     "material_type": "R",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.cuemath.com/numbers/number-systems/"
   }
 },
 {
@@ -211,13 +211,13 @@
   "pk": 7,
   "fields": {
     "level": 1,
-    "name": "L1KS",
+    "name": "Introduction to numbering systems (Kinesthetic/short)",
     "material_type": "K",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.youtube.com/watch?v=LpuPe81bc2w"
   }
 },
 {
@@ -225,13 +225,13 @@
   "pk": 8,
   "fields": {
     "level": 1,
-    "name": "L1KL",
+    "name": "Introduction to numbering systems (Kinesthetic/long)",
     "material_type": "K",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.youtube.com/watch?v=FFDMzbrEXaE"
   }
 },
 {
@@ -239,13 +239,13 @@
   "pk": 9,
   "fields": {
     "level": 2,
-    "name": "L2VS",
+    "name": "Numbering systems conversion (Visual/short)",
     "material_type": "V",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://cdn.discordapp.com/attachments/931253069373669376/931258994624987178/numbering_conversion_sh"
   }
 },
 {
@@ -253,13 +253,13 @@
   "pk": 10,
   "fields": {
     "level": 2,
-    "name": "L2VL",
+    "name": "Numbering systems conversion (Visual/long)",
     "material_type": "V",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://cdn.discordapp.com/attachments/931253069373669376/931258994624987178/numbering_conversion_sh"
   }
 },
 {
@@ -267,13 +267,13 @@
   "pk": 11,
   "fields": {
     "level": 2,
-    "name": "L2AS",
+    "name": "Numbering systems conversion (Auditory/short)",
     "material_type": "A",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/tc8LT7J-ZBk"
   }
 },
 {
@@ -281,13 +281,13 @@
   "pk": 12,
   "fields": {
     "level": 2,
-    "name": "L2AL",
+    "name": "Numbering systems conversion (Auditory/long)",
     "material_type": "A",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/aW3qCcH6Dao"
   }
 },
 {
@@ -295,13 +295,13 @@
   "pk": 13,
   "fields": {
     "level": 2,
-    "name": "L2RS",
+    "name": "Numbering systems conversion (Read/short)",
     "material_type": "R",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.tutorialspoint.com/basics_of_computers/basics_of_computers_number_system_conversion.htm"
   }
 },
 {
@@ -309,13 +309,13 @@
   "pk": 14,
   "fields": {
     "level": 2,
-    "name": "L2RL",
+    "name": "Numbering systems conversion (Read/long)",
     "material_type": "R",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://cdn.discordapp.com/attachments/931253069373669376/931259227694047333/2_Conversion_long.pdf"
   }
 },
 {
@@ -323,13 +323,13 @@
   "pk": 15,
   "fields": {
     "level": 2,
-    "name": "L2KS",
+    "name": "Hexadecimal to binary conversion (Kinesthetic/short)",
     "material_type": "K",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.youtube.com/watch?app=desktop&v=D_YC6DSPpQE"
   }
 },
 {
@@ -337,13 +337,13 @@
   "pk": 16,
   "fields": {
     "level": 2,
-    "name": "L2KL",
+    "name": "Numbering systems conversion (Kinesthetic/long)",
     "material_type": "K",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/tc8LT7J-ZBk"
   }
 },
 {
@@ -351,13 +351,13 @@
   "pk": 17,
   "fields": {
     "level": 3,
-    "name": "L3VS",
+    "name": "Binary Addition (Visual/short)",
     "material_type": "V",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://lings2mi.files.wordpress.com/2012/10/pic-21.png"
   }
 },
 {
@@ -365,13 +365,13 @@
   "pk": 18,
   "fields": {
     "level": 3,
-    "name": "L3VL",
+    "name": "Binary Addition (Visual/long)",
     "material_type": "V",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://lings2mi.files.wordpress.com/2012/10/pic-21.png"
   }
 },
 {
@@ -379,13 +379,13 @@
   "pk": 19,
   "fields": {
     "level": 3,
-    "name": "L3AS",
+    "name": "Binary Addition (Auditory/short)",
     "material_type": "A",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/AE-27BSbkJ4"
   }
 },
 {
@@ -393,13 +393,13 @@
   "pk": 20,
   "fields": {
     "level": 3,
-    "name": "L3AL",
+    "name": "Binary Addition and subtraction (Auditory/long)",
     "material_type": "A",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/CqU9Z3PSb6s"
   }
 },
 {
@@ -407,13 +407,13 @@
   "pk": 21,
   "fields": {
     "level": 3,
-    "name": "L3RS",
+    "name": "Binary operations (Read/short)",
     "material_type": "R",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://byjus.com/maths/binary-operation/"
   }
 },
 {
@@ -421,13 +421,13 @@
   "pk": 22,
   "fields": {
     "level": 3,
-    "name": "L3RL",
+    "name": "Binary operations (Read/long)",
     "material_type": "R",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://cdn.discordapp.com/attachments/931253069373669376/931263034758934558/3_operations_long.pdf"
   }
 },
 {
@@ -435,13 +435,13 @@
   "pk": 23,
   "fields": {
     "level": 3,
-    "name": "L3KS",
+    "name": "Binary addition and subtraction (Kinesthetic/short)",
     "material_type": "K",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/C5EkxfNEMjE"
   }
 },
 {
@@ -449,13 +449,13 @@
   "pk": 24,
   "fields": {
     "level": 3,
-    "name": "L3KL",
+    "name": "Binary operations (Kinesthetic/long)",
     "material_type": "K",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/mZE_w5L-hyU"
   }
 },
 {
@@ -463,13 +463,13 @@
   "pk": 25,
   "fields": {
     "level": 4,
-    "name": "L4VS",
+    "name": "Two's compliment (Visual/short)",
     "material_type": "V",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://delightlylinux.files.wordpress.com/2014/10/l12-2.png"
   }
 },
 {
@@ -477,13 +477,13 @@
   "pk": 26,
   "fields": {
     "level": 4,
-    "name": "L4VL",
+    "name": "Two's compliment (Visual/long)",
     "material_type": "V",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://delightlylinux.files.wordpress.com/2014/10/l12-2.png"
   }
 },
 {
@@ -491,13 +491,13 @@
   "pk": 27,
   "fields": {
     "level": 4,
-    "name": "L4AS",
+    "name": "r's complement and r-1's complement (Auditory/short))",
     "material_type": "A",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/ajzy7cfpd9E"
   }
 },
 {
@@ -505,13 +505,13 @@
   "pk": 28,
   "fields": {
     "level": 4,
-    "name": "L4AL",
+    "name": "1s & 2s Complement Representation of Signed Numbers (Auditory/long)",
     "material_type": "A",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/xOOiWK_Dcz4"
   }
 },
 {
@@ -519,13 +519,13 @@
   "pk": 29,
   "fields": {
     "level": 4,
-    "name": "L4RS",
+    "name": "1's and 2's complement (Read/short)",
     "material_type": "R",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.tutorialspoint.com/1-s-complement-vs-2-s-complement"
   }
 },
 {
@@ -533,13 +533,13 @@
   "pk": 30,
   "fields": {
     "level": 4,
-    "name": "L4RL",
+    "name": "1's and 2's complement (Read/long)",
     "material_type": "R",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://wisdomimbibe.com/complements-used-in-digital-system/"
   }
 },
 {
@@ -547,13 +547,13 @@
   "pk": 31,
   "fields": {
     "level": 4,
-    "name": "L4KS",
+    "name": "2's complement (Kinesthetic/short)",
     "material_type": "K",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/f3xS_7mj5VI"
   }
 },
 {
@@ -561,13 +561,13 @@
   "pk": 32,
   "fields": {
     "level": 4,
-    "name": "L4KL",
+    "name": "2's complement (Kinesthetic/long)",
     "material_type": "K",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/4qH4unVtJkE"
   }
 },
 {
@@ -575,13 +575,13 @@
   "pk": 33,
   "fields": {
     "level": 5,
-    "name": "L5VS",
+    "name": "Difference between Signed magnitude and 2Æs complement (Visual/short)",
     "material_type": "V",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.geeksforgeeks.org/difference-between-signed-magnitude-and-2s-complement/"
   }
 },
 {
@@ -589,13 +589,13 @@
   "pk": 34,
   "fields": {
     "level": 5,
-    "name": "L5VL",
+    "name": "Representation of Negative Binary Numbers (Visual/long))",
     "material_type": "V",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.geeksforgeeks.org/representation-of-negative-binary-numbers/"
   }
 },
 {
@@ -603,13 +603,13 @@
   "pk": 35,
   "fields": {
     "level": 5,
-    "name": "L5AS",
+    "name": "Signed magnitude (Auditory/short)",
     "material_type": "A",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/saZhNTu_dDg"
   }
 },
 {
@@ -617,13 +617,13 @@
   "pk": 36,
   "fields": {
     "level": 5,
-    "name": "L5AL",
+    "name": "Signed magnitude (Auditory/long)",
     "material_type": "A",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/03et_EgfDb0"
   }
 },
 {
@@ -631,13 +631,13 @@
   "pk": 37,
   "fields": {
     "level": 5,
-    "name": "L5RS",
+    "name": "Signed binary numbers (Read/short)",
     "material_type": "R",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.tutorialspoint.com/unsigned-and-signed-binary-numbers"
   }
 },
 {
@@ -645,13 +645,13 @@
   "pk": 38,
   "fields": {
     "level": 5,
-    "name": "L5RL",
+    "name": "Signed binary numbers (Read/long)",
     "material_type": "R",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.electronics-tutorials.ws/binary/signed-binary-numbers.html"
   }
 },
 {
@@ -659,13 +659,13 @@
   "pk": 39,
   "fields": {
     "level": 5,
-    "name": "L5KS",
+    "name": "Signed binary numbers (Kinesthetic/short)",
     "material_type": "K",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/tCMjsQU3_TM"
   }
 },
 {
@@ -673,13 +673,13 @@
   "pk": 40,
   "fields": {
     "level": 5,
-    "name": "L5KL",
+    "name": "Signed binary numbers (Kinesthetic/long)",
     "material_type": "K",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/sJXTo3EZoxM"
   }
 },
 {
@@ -687,13 +687,13 @@
   "pk": 41,
   "fields": {
     "level": 6,
-    "name": "L6VS",
+    "name": "Binary coded decimal (Visual/short)",
     "material_type": "V",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.youtube.com/watch?v=p5VMk2oM8F8"
   }
 },
 {
@@ -701,13 +701,13 @@
   "pk": 42,
   "fields": {
     "level": 6,
-    "name": "L6VL",
+    "name": "Binary coded decimal (Visual/long)",
     "material_type": "V",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.youtube.com/watch?v=p5VMk2oM8F8"
   }
 },
 {
@@ -715,13 +715,13 @@
   "pk": 43,
   "fields": {
     "level": 6,
-    "name": "L6AS",
+    "name": "Binary coded decimal (Auditory/short)",
     "material_type": "A",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/OqRkzN02M6E"
   }
 },
 {
@@ -729,13 +729,13 @@
   "pk": 44,
   "fields": {
     "level": 6,
-    "name": "L6AL",
+    "name": "Binary coded decimal (Auditory/long)",
     "material_type": "A",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/OqRkzN02M6E"
   }
 },
 {
@@ -743,13 +743,13 @@
   "pk": 45,
   "fields": {
     "level": 6,
-    "name": "L6RS",
+    "name": "Binary coded decimal (Read/long)",
     "material_type": "R",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://cdn.discordapp.com/attachments/931253069373669376/931279215729463338/7_BCD_short2.pdf"
   }
 },
 {
@@ -757,13 +757,13 @@
   "pk": 46,
   "fields": {
     "level": 6,
-    "name": "L6RL",
+    "name": "Binary coded decimal (Read/long)",
     "material_type": "R",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.electronics-tutorials.ws/binary/binary-coded-decimal.html"
   }
 },
 {
@@ -771,13 +771,13 @@
   "pk": 47,
   "fields": {
     "level": 6,
-    "name": "L6KS",
+    "name": "Binary coded decimal (Kinesthetic/short)",
     "material_type": "K",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.youtube.com/watch?v=fk2t7BS7POQ"
   }
 },
 {
@@ -785,13 +785,13 @@
   "pk": 48,
   "fields": {
     "level": 6,
-    "name": "L6KL",
+    "name": "Binary coded decimal (Kinesthetic/long)",
     "material_type": "K",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.youtube.com/watch?v=AM0tr8Kyvzg"
   }
 },
 {
@@ -799,13 +799,13 @@
   "pk": 49,
   "fields": {
     "level": 7,
-    "name": "L7VS",
+    "name": "BCD addition (Visual/short)",
     "material_type": "V",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://i.ytimg.com/vi/Qc1rco_ES_Y/hqdefault.jpg"
   }
 },
 {
@@ -813,13 +813,13 @@
   "pk": 50,
   "fields": {
     "level": 7,
-    "name": "L7VL",
+    "name": "BCD addition (Visual/long)",
     "material_type": "V",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://cdn.discordapp.com/attachments/931253069373669376/931280368617783336/bcd_addition_long.png"
   }
 },
 {
@@ -827,13 +827,13 @@
   "pk": 51,
   "fields": {
     "level": 7,
-    "name": "L7AS",
+    "name": "BCD Addition (Auditory/short)",
     "material_type": "A",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/g6CdaNx9Jes"
   }
 },
 {
@@ -841,13 +841,13 @@
   "pk": 52,
   "fields": {
     "level": 7,
-    "name": "L7AL",
+    "name": "BCD Addition (Auditory/long)",
     "material_type": "A",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/Q_xFYfI1lSo"
   }
 },
 {
@@ -855,13 +855,13 @@
   "pk": 53,
   "fields": {
     "level": 7,
-    "name": "L7RS",
+    "name": "BCD addition (Read/short)",
     "material_type": "R",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.includehelp.com/basics/binary-coded-decimal-bcd-code-and-its-addition.aspx"
   }
 },
 {
@@ -869,13 +869,13 @@
   "pk": 54,
   "fields": {
     "level": 7,
-    "name": "L7RL",
+    "name": "BCD addition and subtraction (Read/long)",
     "material_type": "R",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.electrical4u.com/bcd-or-binary-coded-decimal-bcd-conversion-addition-subtraction/"
   }
 },
 {
@@ -883,13 +883,13 @@
   "pk": 55,
   "fields": {
     "level": 7,
-    "name": "L7KS",
+    "name": "BCD Addition (Kinesthetic/short)",
     "material_type": "K",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/yPu57aSj9kA"
   }
 },
 {
@@ -897,13 +897,13 @@
   "pk": 56,
   "fields": {
     "level": 7,
-    "name": "L7KL",
+    "name": "BCD Addition (Kinesthetic/long)",
     "material_type": "K",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/-J-v3CqIpys"
   }
 },
 {
@@ -911,13 +911,13 @@
   "pk": 57,
   "fields": {
     "level": 8,
-    "name": "L8VS",
+    "name": "Logic gates (Visual/short)",
     "material_type": "V",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://cdn.instrumentationtools.com/wp-content/uploads/2017/07/instrumentationtools.com_digital-log"
   }
 },
 {
@@ -925,13 +925,13 @@
   "pk": 58,
   "fields": {
     "level": 8,
-    "name": "L8VL",
+    "name": "Logic gates (Visual/long)",
     "material_type": "V",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.circuitbasics.com/wp-content/uploads/2020/05/image-88.png"
   }
 },
 {
@@ -939,13 +939,13 @@
   "pk": 59,
   "fields": {
     "level": 8,
-    "name": "L8AS",
+    "name": "Logic gates (Auditory/short)",
     "material_type": "A",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/INEtYZqtjTo"
   }
 },
 {
@@ -953,13 +953,13 @@
   "pk": 60,
   "fields": {
     "level": 8,
-    "name": "L8AL",
+    "name": "Logic gates (Auditory/long)",
     "material_type": "A",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/BnB2m1nXZ84"
   }
 },
 {
@@ -967,13 +967,13 @@
   "pk": 61,
   "fields": {
     "level": 8,
-    "name": "L8RS",
+    "name": "Logic gates (Read/short)",
     "material_type": "R",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://www.tutorialspoint.com/computer_logical_organization/logic_gates.htm"
   }
 },
 {
@@ -981,13 +981,13 @@
   "pk": 62,
   "fields": {
     "level": 8,
-    "name": "L8RL",
+    "name": "Logic gates (Read/long)",
     "material_type": "R",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://whatis.techtarget.com/definition/logic-gate-AND-OR-XOR-NOT-NAND-NOR-and-XNOR"
   }
 },
 {
@@ -995,13 +995,13 @@
   "pk": 63,
   "fields": {
     "level": 8,
-    "name": "L8KS",
+    "name": "Logic gates (Kinesthetic/short)",
     "material_type": "K",
     "material_length": "S",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/-6w-MHjwzT0"
   }
 },
 {
@@ -1009,13 +1009,13 @@
   "pk": 64,
   "fields": {
     "level": 8,
-    "name": "L8KL",
+    "name": "Logic gates (Kinesthetic/long)",
     "material_type": "K",
     "material_length": "L",
     "uploader": [
       "admin"
     ],
-    "link": "no"
+    "link": "https://youtu.be/n1LS6AOoGVo"
   }
 },
 {
@@ -1416,6 +1416,24 @@
     "op2": "ask my friend to tell me the directions.",
     "op3": "write down the street directions I need to remember.",
     "op4": "find out where the shop is in relation to somewhere I know."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 198,
+  "fields": {
+    "action_time": "2022-01-13T20:39:45.105Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "student"
+    ],
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 3,
+    "change_message": ""
   }
 }
 ]
