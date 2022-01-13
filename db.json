@@ -1,0 +1,1090 @@
+[
+{
+  "model": "sessions.session",
+  "pk": "5g27f144m23gwlscq9lnas9ss2fopu6y",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n70cY:U0ELjKNyblzU-PdoNVx7rv0c4fA-iOce68Pc7HwIJGA",
+    "expire_date": "2022-01-24T19:46:22.612Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9yinmanzsj3nb6l5hlnk4ro8rx92svsk",
+  "fields": {
+    "session_data": "e30:1n7hNb:PY9iesJ1Ro_SypAhPbau-lbqeod5uGJmhK5EYi8cACI",
+    "expire_date": "2022-01-26T17:25:47.189Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "fbzfrz8l78juxzianatcpd47lsn6wgup",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n82El:J3ikpBFrLwB9B7m-X0WIuphC1GbUYcKnrUvv-ZUvZ8Q",
+    "expire_date": "2022-01-27T15:42:03.696Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mhax7s2ywunsakbtpy7qzst9q8bhmxtl",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n7fIi:r1z2O3O45YACXOjNaHQdv2Sc7-91WG8Ux58LWjf52JU",
+    "expire_date": "2022-01-26T15:12:36.044Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "p90l5i4bkowa6pohgho5919v7frs5kay",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n7OVH:eKq1EFqwvOJpAm4p4C70c-Rt0j391SZ2CDnampFXR5Y",
+    "expire_date": "2022-01-25T21:16:27.456Z"
+  }
+},
+{
+  "model": "learning.user",
+  "fields": {
+    "password": "pbkdf2_sha256$260000$MV0omdNI4gwl050j9sriZp$U0ptO6bEzWk5egIpv9ZMPyV3CtVuMYb8qtwshLwqNaQ=",
+    "last_login": "2022-01-13T15:42:03.687Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-01-09T21:09:44.599Z",
+    "is_student": false,
+    "is_teacher": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "learning.user",
+  "fields": {
+    "password": "pbkdf2_sha256$260000$VZGW34uyECamWbk2PaTqkS$FGGbHHYNOi1pa+PP7qoqyf78OdyClN5SIen8pWcUBxw=",
+    "last_login": "2022-01-13T15:36:30.975Z",
+    "is_superuser": false,
+    "username": "soon",
+    "first_name": "soon",
+    "last_name": "soon",
+    "email": "soon@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-01-13T15:36:30.756Z",
+    "is_student": true,
+    "is_teacher": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 1,
+  "fields": {
+    "name": "Level 1",
+    "skill_required": 1.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 2,
+  "fields": {
+    "name": "Level 2",
+    "skill_required": 2.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 3,
+  "fields": {
+    "name": "Level 3",
+    "skill_required": 3.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 4,
+  "fields": {
+    "name": "Level 4",
+    "skill_required": 4.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 5,
+  "fields": {
+    "name": "Level 5",
+    "skill_required": 5.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 6,
+  "fields": {
+    "name": "Level 6",
+    "skill_required": 6.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 7,
+  "fields": {
+    "name": "Level 7",
+    "skill_required": 7.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 8,
+  "fields": {
+    "name": "Level 8",
+    "skill_required": 8.0
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 1,
+  "fields": {
+    "level": 1,
+    "name": "L1VS",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 2,
+  "fields": {
+    "level": 1,
+    "name": "L1VL",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 3,
+  "fields": {
+    "level": 1,
+    "name": "L1AS",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 4,
+  "fields": {
+    "level": 1,
+    "name": "L1AL",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 5,
+  "fields": {
+    "level": 1,
+    "name": "L1RS",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 6,
+  "fields": {
+    "level": 1,
+    "name": "L1RL",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 7,
+  "fields": {
+    "level": 1,
+    "name": "L1KS",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 8,
+  "fields": {
+    "level": 1,
+    "name": "L1KL",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 9,
+  "fields": {
+    "level": 2,
+    "name": "L2VS",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 10,
+  "fields": {
+    "level": 2,
+    "name": "L2VL",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 11,
+  "fields": {
+    "level": 2,
+    "name": "L2AS",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 12,
+  "fields": {
+    "level": 2,
+    "name": "L2AL",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 13,
+  "fields": {
+    "level": 2,
+    "name": "L2RS",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 14,
+  "fields": {
+    "level": 2,
+    "name": "L2RL",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 15,
+  "fields": {
+    "level": 2,
+    "name": "L2KS",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 16,
+  "fields": {
+    "level": 2,
+    "name": "L2KL",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 17,
+  "fields": {
+    "level": 3,
+    "name": "L3VS",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 18,
+  "fields": {
+    "level": 3,
+    "name": "L3VL",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 19,
+  "fields": {
+    "level": 3,
+    "name": "L3AS",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 20,
+  "fields": {
+    "level": 3,
+    "name": "L3AL",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 21,
+  "fields": {
+    "level": 3,
+    "name": "L3RS",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 22,
+  "fields": {
+    "level": 3,
+    "name": "L3RL",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 23,
+  "fields": {
+    "level": 3,
+    "name": "L3KS",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 24,
+  "fields": {
+    "level": 3,
+    "name": "L3KL",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 25,
+  "fields": {
+    "level": 4,
+    "name": "L4VS",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 26,
+  "fields": {
+    "level": 4,
+    "name": "L4VL",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 27,
+  "fields": {
+    "level": 4,
+    "name": "L4AS",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 28,
+  "fields": {
+    "level": 4,
+    "name": "L4AL",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 29,
+  "fields": {
+    "level": 4,
+    "name": "L4RS",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 30,
+  "fields": {
+    "level": 4,
+    "name": "L4RL",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 31,
+  "fields": {
+    "level": 4,
+    "name": "L4KS",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 32,
+  "fields": {
+    "level": 4,
+    "name": "L4KL",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 33,
+  "fields": {
+    "level": 5,
+    "name": "L5VS",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 34,
+  "fields": {
+    "level": 5,
+    "name": "L5VL",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 35,
+  "fields": {
+    "level": 5,
+    "name": "L5AS",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 36,
+  "fields": {
+    "level": 5,
+    "name": "L5AL",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 37,
+  "fields": {
+    "level": 5,
+    "name": "L5RS",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 38,
+  "fields": {
+    "level": 5,
+    "name": "L5RL",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 39,
+  "fields": {
+    "level": 5,
+    "name": "L5KS",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 40,
+  "fields": {
+    "level": 5,
+    "name": "L5KL",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 41,
+  "fields": {
+    "level": 6,
+    "name": "L6VS",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 42,
+  "fields": {
+    "level": 6,
+    "name": "L6VL",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 43,
+  "fields": {
+    "level": 6,
+    "name": "L6AS",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 44,
+  "fields": {
+    "level": 6,
+    "name": "L6AL",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 45,
+  "fields": {
+    "level": 6,
+    "name": "L6RS",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 46,
+  "fields": {
+    "level": 6,
+    "name": "L6RL",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 47,
+  "fields": {
+    "level": 6,
+    "name": "L6KS",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 48,
+  "fields": {
+    "level": 6,
+    "name": "L6KL",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 49,
+  "fields": {
+    "level": 7,
+    "name": "L7VS",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 50,
+  "fields": {
+    "level": 7,
+    "name": "L7VL",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 51,
+  "fields": {
+    "level": 7,
+    "name": "L7AS",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 52,
+  "fields": {
+    "level": 7,
+    "name": "L7AL",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 53,
+  "fields": {
+    "level": 7,
+    "name": "L7RS",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 54,
+  "fields": {
+    "level": 7,
+    "name": "L7RL",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 55,
+  "fields": {
+    "level": 7,
+    "name": "L7KS",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 56,
+  "fields": {
+    "level": 7,
+    "name": "L7KL",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 57,
+  "fields": {
+    "level": 8,
+    "name": "L8VS",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 58,
+  "fields": {
+    "level": 8,
+    "name": "L8VL",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 59,
+  "fields": {
+    "level": 8,
+    "name": "L8AS",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 60,
+  "fields": {
+    "level": 8,
+    "name": "L8AL",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 61,
+  "fields": {
+    "level": 8,
+    "name": "L8RS",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 62,
+  "fields": {
+    "level": 8,
+    "name": "L8RL",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 63,
+  "fields": {
+    "level": 8,
+    "name": "L8KS",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 64,
+  "fields": {
+    "level": 8,
+    "name": "L8KL",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "no"
+  }
+},
+{
+  "model": "learning.student",
+  "pk": 1,
+  "fields": {
+    "preferred_media": "V",
+    "student_skill": 3.0,
+    "took_quiz": true,
+    "took_poll": false,
+    "learned_material": [
+      1,
+      2,
+      4,
+      9,
+      10,
+      18,
+      26
+    ]
+  }
+},
+{
+  "model": "learning.student",
+  "pk": 14,
+  "fields": {
+    "preferred_media": "V",
+    "student_skill": 4.0,
+    "took_quiz": true,
+    "took_poll": true,
+    "learned_material": []
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 1,
+  "fields": {
+    "level": 1,
+    "question": "Which number is a decimal?",
+    "op1": "100",
+    "op2": "E15",
+    "op3": "56",
+    "op4": "A + C",
+    "op5": "I don't know the answer",
+    "answer": "op4"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 2,
+  "fields": {
+    "level": 1,
+    "question": "Which number is an octal?",
+    "op1": 
