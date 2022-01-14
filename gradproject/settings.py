@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'learning.apps.LearningConfig',
     'crispy_forms',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -150,3 +151,8 @@ MESSAGE_TAGS = {
 }
 
 django_heroku.settings(locals())
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}

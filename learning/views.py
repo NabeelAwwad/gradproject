@@ -209,12 +209,20 @@ def quiz(request):
         if not student.took_poll:
             return redirect('poll')
         student.student_skill = 1
-
+        unanswered = 0
         # set scores to 0
         student_scores = Score.objects.filter(student=student)
         for score in student_scores:
             score.score = 0
             score.save()
+
+        for q in questions:
+            if request.POST.get(q.question) is None:
+                unanswered += 1
+
+        if unanswered > 0:
+            messages.error(request, "Please answer all of the questions.")
+            return redirect("quiz")
 
         for q in questions:
             if Score.objects.filter(student=student, level=q.level).exists():
