@@ -69,16 +69,22 @@ def home(request):
             'materials': materials,
             'misconceptions': misconceptions,
             'learned': learned,
-            'preference': preference
+            'preference': preference,
+            'took_quiz': request.user.student.took_quiz,
+            'took_poll': request.user.student.took_poll,
         }
         return render(request, 'home.html', context)
 
 
 def register(request):
+    if request.user.is_authenticated:
+        return redirect(request.POST.get('next', '/'))
     return render(request, 'Register.html')
 
 
 def student_register(request):
+    if request.user.is_authenticated:
+        return redirect(request.POST.get('next', '/'))
     if request.method == 'POST':
         user_form = UserRegisterForm(request.POST)
         if user_form.is_valid():
@@ -97,16 +103,17 @@ def student_register(request):
 
 
 def teacher_register(request):
-    if request.method == 'POST':
-        user_form = UserRegisterForm(request.POST)
-        if user_form.is_valid():
-            user = user_form.save()
-            user.save()
-            login(request, user)
-            return redirect('home')
-    else:
-        user_form = UserRegisterForm()
-    return render(request, 'TeacherRegister.html', {'user_form': user_form})
+    return redirect("register")
+    # if request.method == 'POST':
+    #     user_form = UserRegisterForm(request.POST)
+    #     if user_form.is_valid():
+    #         user = user_form.save()
+    #         user.save()
+    #         login(request, user)
+    #         return redirect('home')
+    # else:
+    #     user_form = UserRegisterForm()
+    # return render(request, 'TeacherRegister.html', {'user_form': user_form})
 
 
 @login_required
@@ -122,7 +129,8 @@ def poll(request):
     if request.method == 'POST':
         context = {
             'polls': polls,
-            'not_first_time': request.user.student.took_poll
+            'took_quiz': request.user.student.took_quiz,
+            'took_poll': request.user.student.took_poll,
         }
         for p in polls:
             answers = request.POST.getlist(p.poll)
@@ -196,18 +204,21 @@ def poll(request):
     else:
         context = {
             'polls': polls,
-            'took_poll': request.user.student.took_poll
+            'took_quiz': request.user.student.took_quiz,
+            'took_poll': request.user.student.took_poll,
         }
     return render(request, 'poll.html', context)
 
 
 @login_required
 def quiz(request):
+    if request.user.student.took_quiz and request.user.student.student_skill != 9:
+        return redirect(request.POST.get('next', '/'))
+    if not request.user.student.took_poll:
+        return redirect('poll')
     if request.method == 'POST':
         questions = Question.objects.all()
         student = request.user.student
-        if not student.took_poll:
-            return redirect('poll')
         student.student_skill = 1
         unanswered = 0
         # set scores to 0
@@ -231,10 +242,11 @@ def quiz(request):
                 score = Score.objects.create(student=student, level=q.level)
             if q.answer == request.POST.get(q.question):
                 score.score += 1
-                if score.score != 0:
-                    student.student_skill = q.level.skill_required + 1
-                else:
-                    break
+            if score.score != 0:
+                student.student_skill = q.level.skill_required + 1
+            else:
+                break
+
             score.save()
         student.took_quiz = True
         student.save()
@@ -243,7 +255,8 @@ def quiz(request):
         questions = Question.objects.all()
         context = {
             'questions': questions,
-            'took_quiz': request.user.student.took_quiz
+            'took_quiz': request.user.student.took_quiz,
+            'took_poll': request.user.student.took_poll,
         }
     return render(request, 'Quiz.html', context)
 
@@ -262,6 +275,8 @@ def update(request):
         u_form = UserUpdateForm(instance=request.user)
     context = {
         'u_form': u_form,
+        'took_quiz': request.user.student.took_quiz,
+        'took_poll': request.user.student.took_poll,
 
     }
     return render(request, 'update.html', context)
@@ -281,13 +296,16 @@ def change_pass(request):
     else:
         pass_form = PasswordChangeForm(request.user, request.POST)
     context = {
-        'pass_form': pass_form
+        'pass_form': pass_form,
+        'took_quiz': request.user.student.took_quiz,
+        'took_poll': request.user.student.took_poll,
     }
     return render(request, 'change_pass.html', context)
 
+
 def login_view(request):
     if request.user.is_authenticated:
-        return redirect("home")
+        return redirect(request.POST.get('next', '/'))
     if request.method == 'POST':
 
         auth_form = AuthenticationForm(data=request.POST)
@@ -306,3 +324,10 @@ def login_view(request):
         'auth_form': auth_form
     }
     return render(request, 'Login.html', context)
+
+def about(request):
+    context = {
+        'took_quiz': request.user.student.took_quiz,
+        'took_poll': request.user.student.took_poll,
+    }
+    return render(request, "about.html", context)

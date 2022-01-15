@@ -1,8 +1,6 @@
 {% extends 'base.html' %}
-{% load crispy_forms_filters %}
 {% block content %}
-    {% load crispy_forms_tags %}
-    <h2>Update information</h2>
+    <h1 class="display-5">Update information</h1>
     <form method="post" novalidate>
         {% csrf_token %}
         {% if messages %}
@@ -13,14 +11,14 @@
             {% endfor %}
         {% endif %}
         {% for field in u_form %}
-            <p>
+            <p class="lead"><strong>
                 {{ field.label_tag }}<br>
                 {{ field }}<br>
+            </strong></p>
                 {% if field.help_text %}
-                    <p><small style="color: grey">{{ field.help_text }}</small></p>
+                    <p><strong><small>{{ field.help_text }}</small></strong></p>
                 {% endif %}
-            </p>
         {% endfor %}
-        <button type="submit" class="btn btn-primary">Update profile</button>
+        <button type="submit" class="btn btn-success">Update</button>
     </form>
 {% endblock %}

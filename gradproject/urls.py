@@ -15,5 +15,6 @@ urlpatterns = [
     path('pref/', learning_views.poll, name='poll'),
     path('update/', learning_views.update, name='update'),
     path('changepass/', learning_views.change_pass, name='change_pass'),
+    path('about/', learning_views.about, name='about'),
 
 ]

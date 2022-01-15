@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
-
 {% block content %}
-   {% load crispy_forms_tags %}
-    <h2>Login</h2>
+    <div class="d-flex justify-content-between">
+    <h1 class="display-5">Digital systems learning recommendations</h1>
     <form method="post" novalidate>
         {% csrf_token %}
         {% if messages %}
@@ -13,15 +12,13 @@
             {% endfor %}
         {% endif %}
         {% for field in auth_form %}
-            <p>
+            <p class="lead"><strong>
                 {{ field.label_tag }}<br>
                 {{ field }}<br>
-                {% if field.help_text %}
-                    <p><small style="color: grey">{{ field.help_text }}</small></p>
-                {% endif %}
-            </p>
-        {% endfor %}
-
-        <button type="submit" class="btn btn-primary">Login</button>
+            </strong></p>
+    {% endfor %}
+    <button type="submit" class="btn btn-success btn-lg">Sign In</button>
+    <a href="{% url "register" %}" class="btn btn-md btn-secondary">Sign Up</a>
     </form>
+    </div>
 {% endblock %}

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkgray">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(151, 191, 122, 0.8)">
             <div class="container-fluid">
                 <ul class="navbar-nav">
                     {% if user.is_authenticated %}
@@ -12,14 +12,13 @@
                             <a class="nav-link" href="{% url 'update' %}">Update profile</a>
                         </li>
                         <li class="nav-item h6">
-                            <a class="nav-link" href="#">How it works</a>
-                        </li>
-                        </li>
-                        <li class="nav-item h6">
                             <a class="nav-link" href="{% url 'change_pass' %}">Change password</a>
                         </li>
                         <li class="nav-item h6">
                             <a class="nav-link" href="{% url 'poll' %}">Retake poll</a>
+                        </li>
+                        <li class="nav-item h6">
+                            <a class="nav-link" href="{% url 'about' %}">About</a>
                         </li>
                         <li class="nav-item h6">
                             <a class="nav-link" href="{% url 'logout' %}">Logout</a>
@@ -30,7 +29,12 @@
                         </li>
                         <li class="nav-item h6">
                             <a class="nav-link" href="{% url 'register' %}">Register</a>
+                        </li>
+                        <li class="nav-item h6">
+                            <a class="nav-link" href="{% url 'about' %}">About</a>
+                        </li>
                         </ul>
+
                         </div>
                         </nav>
                     {% endif %}

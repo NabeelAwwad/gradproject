@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'learning.apps.LearningConfig',
     'crispy_forms',
+    'crispy_bootstrap5',
     'django_extensions',
 ]
 
@@ -156,3 +157,7 @@ GRAPH_MODELS = {
   'all_applications': True,
   'group_models': True,
 }
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
