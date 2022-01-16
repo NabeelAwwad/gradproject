@@ -325,9 +325,13 @@ def login_view(request):
     }
     return render(request, 'Login.html', context)
 
+
 def about(request):
-    context = {
-        'took_quiz': request.user.student.took_quiz,
-        'took_poll': request.user.student.took_poll,
-    }
+    if request.user.is_authenticated:
+        context = {
+            'took_quiz': request.user.student.took_quiz,
+            'took_poll': request.user.student.took_poll,
+        }
+    else:
+        context = {}
     return render(request, "about.html", context)
