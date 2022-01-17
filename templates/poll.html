@@ -17,7 +17,7 @@
             {% endif %}
             {% for p  in polls %}
                 <div class="form-group">
-                    <label for="poll">{{ p.poll }}</label>
+                    <label for="poll">{{ forloop.counter }}) {{ p.poll }}</label>
                 </div>
                 <div class="form-check">
                     <div class="form-check">

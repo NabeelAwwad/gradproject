@@ -214,6 +214,7 @@ def poll(request):
 def quiz(request):
     if request.user.student.took_quiz and request.user.student.student_skill != 9:
         return redirect(request.POST.get('next', '/'))
+
     if not request.user.student.took_poll:
         return redirect('poll')
     if request.method == 'POST':
@@ -221,6 +222,7 @@ def quiz(request):
         student = request.user.student
         student.student_skill = 1
         unanswered = 0
+
         # set scores to 0
         student_scores = Score.objects.filter(student=student)
         for score in student_scores:

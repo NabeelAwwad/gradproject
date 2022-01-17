@@ -16,7 +16,7 @@
             {% endif %}
             {% for q  in questions %}
                 <div class="form-group">
-                    <label for="question">{{ q.id }}- {{ q.question }}</label>
+                    <label for="question">{{ forloop.counter }}) {{ q.question }}</label>
                 </div>
                 <div class="form-check">
                     <div class="form-check">
