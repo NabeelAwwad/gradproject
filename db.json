@@ -9,6 +9,14 @@
 },
 {
   "model": "sessions.session",
+  "pk": "8kai7s5n28co9b1iry2ldr12exr0avb1",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n9YMa:nI_IJbp2QWaShqk4VA7dhvCFE_PROmbtOBYtAHvzLjA",
+    "expire_date": "2022-01-31T20:12:24.286Z"
+  }
+},
+{
+  "model": "sessions.session",
   "pk": "9yinmanzsj3nb6l5hlnk4ro8rx92svsk",
   "fields": {
     "session_data": "e30:1n7hNb:PY9iesJ1Ro_SypAhPbau-lbqeod5uGJmhK5EYi8cACI",
@@ -17,10 +25,18 @@
 },
 {
   "model": "sessions.session",
-  "pk": "fbzfrz8l78juxzianatcpd47lsn6wgup",
+  "pk": "dpe6jpjywql6aba4zouw47pmmam1cjyh",
   "fields": {
-    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n82El:J3ikpBFrLwB9B7m-X0WIuphC1GbUYcKnrUvv-ZUvZ8Q",
-    "expire_date": "2022-01-27T15:42:03.696Z"
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n8oFd:pmn2BN_JQwTxvp9Sn4PZbYwdXevsMtxOiUbtMGEW6jQ",
+    "expire_date": "2022-01-29T18:58:09.382Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ip894rxx0tws80z4paunav432jek7rfa",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n9YMC:pku6ur5IFG-dtdg88Pexrs3iD1IUi9E60trDl4RmsHU",
+    "expire_date": "2022-01-31T20:12:00.813Z"
   }
 },
 {
@@ -29,6 +45,14 @@
   "fields": {
     "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n7fIi:r1z2O3O45YACXOjNaHQdv2Sc7-91WG8Ux58LWjf52JU",
     "expire_date": "2022-01-26T15:12:36.044Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ok9gjs6krzvplsqfdkh78y882d9wwhj4",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n8nkq:sYqGTzan_cZxPtnCNv7ab4faqHNV87blwAJzZoSEHL8",
+    "expire_date": "2022-01-29T18:26:20.995Z"
   }
 },
 {
@@ -43,7 +67,7 @@
   "model": "learning.user",
   "fields": {
     "password": "pbkdf2_sha256$260000$MV0omdNI4gwl050j9sriZp$U0ptO6bEzWk5egIpv9ZMPyV3CtVuMYb8qtwshLwqNaQ=",
-    "last_login": "2022-01-13T15:42:03.687Z",
+    "last_login": "2022-01-17T20:12:24.279Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
@@ -1416,24 +1440,6 @@
     "op2": "ask my friend to tell me the directions.",
     "op3": "write down the street directions I need to remember.",
     "op4": "find out where the shop is in relation to somewhere I know."
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 198,
-  "fields": {
-    "action_time": "2022-01-13T20:39:45.105Z",
-    "user": [
-      "admin"
-    ],
-    "content_type": [
-      "learning",
-      "student"
-    ],
-    "object_id": "1",
-    "object_repr": "admin",
-    "action_flag": 3,
-    "change_message": ""
   }
 }
 ]
