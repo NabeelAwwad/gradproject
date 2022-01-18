@@ -14,10 +14,8 @@ from pathlib import Path
 from django.contrib import messages
 import os
 import django_heroku
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -80,11 +78,31 @@ WSGI_APPLICATION = 'gradproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'd6b0idoabfihak',
+
+        'USER': 'cmtlmslgbrysuu',
+
+        'PASSWORD': '82149a974e26ba0a9040603b29f3d19947d7353b1ff7840f3144d40e4765636a',
+
+        'HOST': 'ec2-52-49-56-163.eu-west-1.compute.amazonaws.com',
+
+        'PORT': '5432',
+
     }
+
 }
 
 # Password validation
@@ -154,8 +172,8 @@ MESSAGE_TAGS = {
 django_heroku.settings(locals())
 
 GRAPH_MODELS = {
-  'all_applications': True,
-  'group_models': True,
+    'all_applications': True,
+    'group_models': True,
 }
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
