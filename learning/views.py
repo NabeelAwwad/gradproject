@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate, logout
 from learning.forms import UserRegisterForm, UserUpdateForm
 from django.shortcuts import render, redirect
-from learning.models import Question, Student, Poll, Material, User, Level, Score
+from learning.models import Question, Student, Poll, Material, User, Topic, Score
 from django.contrib import messages
 from django.contrib.auth.forms import PasswordChangeForm, AuthenticationForm
 from django.contrib.auth import update_session_auth_hash
@@ -18,41 +18,68 @@ def home(request):
         return redirect('quiz')
     preference = student.get_preferred_media_display()
     learned = student.learned_material.all()
-    print('learned', learned)
-    misconceptions = Material.objects.filter(level__skill_required__lt=student.student_skill)
-    materials = Material.objects.filter(level__skill_required__exact=student.student_skill, material_length='L')
-    for mat in learned:
-        materials = materials.exclude(name__exact=mat.name)
-    student_scores = Score.objects.filter(student=student)
-    for score in student_scores:
-        if score.score == 1:
-            misconceptions = misconceptions.exclude(level=score.level, material_length__exact='L')
-        elif score.score == 0 or score.score == 2:
-            misconceptions = misconceptions.exclude(level=score.level)
-
-    for mat in learned:
-        misconceptions = misconceptions.exclude(name__exact=mat.name)
 
     if len(student.preferred_media) == 1:
-        materials = materials.filter(material_type__exact=student.preferred_media)
-        misconceptions = misconceptions.filter(material_type__exact=student.preferred_media)
+        mat_pref = Material.objects.filter(material_type__exact=student.preferred_media)
     elif len(student.preferred_media) == 2:
-        materials = materials.filter(Q(material_type__exact=student.preferred_media[0])
-                                     | Q(material_type__exact=student.preferred_media[1]))
-        misconceptions = misconceptions.filter(Q(material_type__exact=student.preferred_media[0])
-                                               | Q(material_type__exact=student.preferred_media[1]))
+        mat_pref = Material.objects.filter(Q(material_type__exact=student.preferred_media[0])
+                                           | Q(material_type__exact=student.preferred_media[1]))
     elif len(student.preferred_media) == 3:
-        materials = materials.filter(Q(material_type__exact=student.preferred_media[0])
-                                     | Q(material_type__exact=student.preferred_media[1])
-                                     | Q(material_type__exact=student.preferred_media[2]))
-        misconceptions = misconceptions.filter(Q(material_type__exact=student.preferred_media[0])
-                                               | Q(material_type__exact=student.preferred_media[1])
-                                               | Q(material_type__exact=student.preferred_media[2]))
+        mat_pref = Material.objects.filter(Q(material_type__exact=student.preferred_media[0])
+                                           | Q(material_type__exact=student.preferred_media[1])
+                                           | Q(material_type__exact=student.preferred_media[2]))
+    else:
+        mat_pref = Material.objects.all()
 
-    if not materials and student.student_skill != 9:
-        student.student_skill += 1
-        student.save()
-        return redirect('home')
+    # student_scores = Score.objects.filter(Q(score=1) | Q(score=2), student=student)
+    # for score in student_scores:
+    #     passed_topics |= Topic.objects.filter(name__exact=score.topic.name)
+    #     student.passed_topics.add
+    for topic in Topic.objects.all():
+        learned_set = set(learned.values_list('id', flat=True))
+        materials_set = set(mat_pref.filter(topic=topic, material_length='L').values_list('id', flat=True))
+        if materials_set.issubset(learned_set):
+            student.passed_topics.add(topic)
+
+    current_topics = Topic.objects.filter(Q(dependencies__in=student.passed_topics.all()))
+
+    for topic in Topic.objects.all():
+        depend_set = set(topic.dependencies.all().values_list('id', flat=True))
+        passed_list = set(student.passed_topics.all().values_list('id', flat=True))
+        if not depend_set.issubset(passed_list):
+            current_topics = current_topics.exclude(name__exact=topic.name)
+
+    for topic in current_topics:
+        if topic in student.passed_topics.all():
+            current_topics = current_topics.exclude(name__exact=topic.name)
+
+    if not student.passed_topics.all():
+        current_topics |= Topic.objects.filter(id=1)
+
+    materials = mat_pref.filter(topic__in=current_topics, material_length='L')
+    half_passed_topics = Topic.objects.none()
+    half_student_scores = Score.objects.filter(Q(score=1), student=student)
+    for score in half_student_scores:
+        half_passed_topics |= Topic.objects.filter(name__exact=score.topic.name)
+
+    misconceptions = mat_pref.filter(topic__in=half_passed_topics, material_length='S')
+    # print('half_passed', half_passed_topics)
+    # print('materials', materials)
+    # print('misses', misconceptions)
+    print('passed topics', student.passed_topics.all())
+    print('current topics', current_topics)
+
+    for mat in learned:
+        materials = materials.exclude(name__exact=mat.name)
+        misconceptions = misconceptions.exclude(name__exact=mat.name)
+    current_topics_list = []
+    for topic in current_topics.all():
+        current_topics_list.append(topic.name)
+
+    # if not materials and student.student_skill != 9:
+    #     student.student_skill += 1
+    #     student.save()
+    #     return redirect('home')
 
     if request.method == 'POST':
         for mat in materials:
@@ -72,6 +99,7 @@ def home(request):
             'preference': preference,
             'took_quiz': request.user.student.took_quiz,
             'took_poll': request.user.student.took_poll,
+            'current_topics': current_topics_list,
         }
         return render(request, 'home.html', context)
 
@@ -212,16 +240,23 @@ def poll(request):
 
 @login_required
 def quiz(request):
-    if request.user.student.took_quiz and request.user.student.student_skill != 9:
+    student = request.user.student
+    if student.passed_topics.all() == Topic.objects.all():
         return redirect(request.POST.get('next', '/'))
 
     if not request.user.student.took_poll:
         return redirect('poll')
+
     if request.method == 'POST':
         questions = Question.objects.all()
-        student = request.user.student
-        student.student_skill = 1
         unanswered = 0
+
+        for topic in student.passed_topics.all():
+            student.passed_topics.remove(topic)
+
+        for mat in student.learned_material.all():
+            student.learned_material.remove(mat)
+        student.save()
 
         # set scores to 0
         student_scores = Score.objects.filter(student=student)
@@ -238,17 +273,14 @@ def quiz(request):
             return redirect("quiz")
 
         for q in questions:
-            if Score.objects.filter(student=student, level=q.level).exists():
-                score = Score.objects.get(student=student, level=q.level)
+            if Score.objects.filter(student=student, topic=q.topic).exists():
+                score = Score.objects.get(student=student, topic=q.topic)
             else:
-                score = Score.objects.create(student=student, level=q.level)
+                score = Score.objects.create(student=student, topic=q.topic)
             if q.answer == request.POST.get(q.question):
                 score.score += 1
-            if score.score != 0:
-                student.student_skill = q.level.skill_required + 1
-            else:
-                break
-
+            if score.score > 0:
+                student.passed_topics.add(score.topic)
             score.save()
         student.took_quiz = True
         student.save()

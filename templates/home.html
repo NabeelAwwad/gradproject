@@ -12,10 +12,10 @@
                     <h6>Preference: {{ preference }}</h6>
                 </div>
                 <div>
-                    {% if not materials %}
-                    <h6>Level: Max</h6>
-                    {% else %}
-                    <h6>Level: {{ user.student.student_skill }}</h6>
+                    {% if not current_topics %}
+                        <h6>There are no topics left to cover.</h6>
+                        {% else %}
+                        <h6>Current topics: {{ current_topics }}</h6>
                     {% endif %}
                 </div>
             </div>
@@ -33,14 +33,12 @@
     </strong></p>
     {% else %}
     {% for mat in materials %}
-        {% if mat not in learned %}
         <ul>
             <li>
             <p class="lead"><strong>{{ mat.name }}</strong></p>
             <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer" class="btn btn-md btn-primary">Link</a>
                 <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as finished</button>
             </li>
-        {% endif %}
         </ul>
     {% endfor %}
     {% endif %}

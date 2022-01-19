@@ -1,0 +1,1772 @@
+[
+{
+  "model": "sessions.session",
+  "pk": "5g27f144m23gwlscq9lnas9ss2fopu6y",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n70cY:U0ELjKNyblzU-PdoNVx7rv0c4fA-iOce68Pc7HwIJGA",
+    "expire_date": "2022-01-24T19:46:22.612Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9yinmanzsj3nb6l5hlnk4ro8rx92svsk",
+  "fields": {
+    "session_data": "e30:1n7hNb:PY9iesJ1Ro_SypAhPbau-lbqeod5uGJmhK5EYi8cACI",
+    "expire_date": "2022-01-26T17:25:47.189Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "dpe6jpjywql6aba4zouw47pmmam1cjyh",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n8oFd:pmn2BN_JQwTxvp9Sn4PZbYwdXevsMtxOiUbtMGEW6jQ",
+    "expire_date": "2022-01-29T18:58:09.382Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ip894rxx0tws80z4paunav432jek7rfa",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n9YMC:pku6ur5IFG-dtdg88Pexrs3iD1IUi9E60trDl4RmsHU",
+    "expire_date": "2022-01-31T20:12:00.813Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mhax7s2ywunsakbtpy7qzst9q8bhmxtl",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n7fIi:r1z2O3O45YACXOjNaHQdv2Sc7-91WG8Ux58LWjf52JU",
+    "expire_date": "2022-01-26T15:12:36.044Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ok9gjs6krzvplsqfdkh78y882d9wwhj4",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n8nkq:sYqGTzan_cZxPtnCNv7ab4faqHNV87blwAJzZoSEHL8",
+    "expire_date": "2022-01-29T18:26:20.995Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "p90l5i4bkowa6pohgho5919v7frs5kay",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlmL4y8lfc5g7a4NDiBbipMKcXcSKQU0U8x7M28RcV1KXHue45TERZzF6bcj5GeuO0gPrPcmudVlnkjuijxol2NL-XU93L-Dgr1sa2O98oYHNirYwJBUJtLO5eTB2y3IaR4MeW0BQyALTrtAABrJmnQTny_DGDcm:1n7OVH:eKq1EFqwvOJpAm4p4C70c-Rt0j391SZ2CDnampFXR5Y",
+    "expire_date": "2022-01-25T21:16:27.456Z"
+  }
+},
+{
+  "model": "learning.user",
+  "fields": {
+    "password": "pbkdf2_sha256$260000$MV0omdNI4gwl050j9sriZp$U0ptO6bEzWk5egIpv9ZMPyV3CtVuMYb8qtwshLwqNaQ=",
+    "last_login": "2022-01-17T20:12:24.279Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-01-09T21:09:44.599Z",
+    "is_student": false,
+    "is_teacher": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 1,
+  "fields": {
+    "name": "Level 1",
+    "skill_required": 1.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 2,
+  "fields": {
+    "name": "Level 2",
+    "skill_required": 2.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 3,
+  "fields": {
+    "name": "Level 3",
+    "skill_required": 3.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 4,
+  "fields": {
+    "name": "Level 4",
+    "skill_required": 4.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 5,
+  "fields": {
+    "name": "Level 5",
+    "skill_required": 5.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 6,
+  "fields": {
+    "name": "Level 6",
+    "skill_required": 6.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 7,
+  "fields": {
+    "name": "Level 7",
+    "skill_required": 7.0
+  }
+},
+{
+  "model": "learning.level",
+  "pk": 8,
+  "fields": {
+    "name": "Level 8",
+    "skill_required": 8.0
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 1,
+  "fields": {
+    "level": 1,
+    "name": "Introduction to numbering systems (Visual and short)",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://img.brainkart.com/imagebk34/khBRZq1.jpg"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 2,
+  "fields": {
+    "level": 1,
+    "name": "Introduction to numbering systems (Visual/long)",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://img.brainkart.com/imagebk34/khBRZq1.jpg"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 3,
+  "fields": {
+    "level": 1,
+    "name": "Introduction to numbering systems (Auditory/Short)",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.youtube.com/watch?app=desktop&v=0tDj7qRTPD8"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 4,
+  "fields": {
+    "level": 1,
+    "name": "Introduction to numbering systems (Auditory/long)",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.youtube.com/watch?app=desktop&v=0tDj7qRTPD8"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 5,
+  "fields": {
+    "level": 1,
+    "name": "Introduction to numbering systems (Read/short)",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.cs.utah.edu/~germain/PPS/Topics/numbering_systems.html"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 6,
+  "fields": {
+    "level": 1,
+    "name": "Introduction to numbering systems (Read/long)",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.cuemath.com/numbers/number-systems/"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 7,
+  "fields": {
+    "level": 1,
+    "name": "Introduction to numbering systems (Kinesthetic/short)",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.youtube.com/watch?v=LpuPe81bc2w"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 8,
+  "fields": {
+    "level": 1,
+    "name": "Introduction to numbering systems (Kinesthetic/long)",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.youtube.com/watch?v=FFDMzbrEXaE"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 9,
+  "fields": {
+    "level": 2,
+    "name": "Numbering systems conversion (Visual/short)",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://cdn.discordapp.com/attachments/931253069373669376/931258994624987178/numbering_conversion_sh"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 10,
+  "fields": {
+    "level": 2,
+    "name": "Numbering systems conversion (Visual/long)",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://cdn.discordapp.com/attachments/931253069373669376/931258994624987178/numbering_conversion_sh"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 11,
+  "fields": {
+    "level": 2,
+    "name": "Numbering systems conversion (Auditory/short)",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/tc8LT7J-ZBk"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 12,
+  "fields": {
+    "level": 2,
+    "name": "Numbering systems conversion (Auditory/long)",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/aW3qCcH6Dao"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 13,
+  "fields": {
+    "level": 2,
+    "name": "Numbering systems conversion (Read/short)",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.tutorialspoint.com/basics_of_computers/basics_of_computers_number_system_conversion.htm"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 14,
+  "fields": {
+    "level": 2,
+    "name": "Numbering systems conversion (Read/long)",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://cdn.discordapp.com/attachments/931253069373669376/931259227694047333/2_Conversion_long.pdf"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 15,
+  "fields": {
+    "level": 2,
+    "name": "Hexadecimal to binary conversion (Kinesthetic/short)",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.youtube.com/watch?app=desktop&v=D_YC6DSPpQE"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 16,
+  "fields": {
+    "level": 2,
+    "name": "Numbering systems conversion (Kinesthetic/long)",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/tc8LT7J-ZBk"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 17,
+  "fields": {
+    "level": 3,
+    "name": "Binary Addition (Visual/short)",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://lings2mi.files.wordpress.com/2012/10/pic-21.png"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 18,
+  "fields": {
+    "level": 3,
+    "name": "Binary Addition (Visual/long)",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://lings2mi.files.wordpress.com/2012/10/pic-21.png"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 19,
+  "fields": {
+    "level": 3,
+    "name": "Binary Addition (Auditory/short)",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/AE-27BSbkJ4"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 20,
+  "fields": {
+    "level": 3,
+    "name": "Binary Addition and subtraction (Auditory/long)",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/CqU9Z3PSb6s"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 21,
+  "fields": {
+    "level": 3,
+    "name": "Binary operations (Read/short)",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://byjus.com/maths/binary-operation/"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 22,
+  "fields": {
+    "level": 3,
+    "name": "Binary operations (Read/long)",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://cdn.discordapp.com/attachments/931253069373669376/931263034758934558/3_operations_long.pdf"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 23,
+  "fields": {
+    "level": 3,
+    "name": "Binary addition and subtraction (Kinesthetic/short)",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/C5EkxfNEMjE"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 24,
+  "fields": {
+    "level": 3,
+    "name": "Binary operations (Kinesthetic/long)",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/mZE_w5L-hyU"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 25,
+  "fields": {
+    "level": 4,
+    "name": "Two's compliment (Visual/short)",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://delightlylinux.files.wordpress.com/2014/10/l12-2.png"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 26,
+  "fields": {
+    "level": 4,
+    "name": "Two's compliment (Visual/long)",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://delightlylinux.files.wordpress.com/2014/10/l12-2.png"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 27,
+  "fields": {
+    "level": 4,
+    "name": "r's complement and r-1's complement (Auditory/short))",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/ajzy7cfpd9E"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 28,
+  "fields": {
+    "level": 4,
+    "name": "1s & 2s Complement Representation of Signed Numbers (Auditory/long)",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/xOOiWK_Dcz4"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 29,
+  "fields": {
+    "level": 4,
+    "name": "1's and 2's complement (Read/short)",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.tutorialspoint.com/1-s-complement-vs-2-s-complement"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 30,
+  "fields": {
+    "level": 4,
+    "name": "1's and 2's complement (Read/long)",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://wisdomimbibe.com/complements-used-in-digital-system/"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 31,
+  "fields": {
+    "level": 4,
+    "name": "2's complement (Kinesthetic/short)",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/f3xS_7mj5VI"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 32,
+  "fields": {
+    "level": 4,
+    "name": "2's complement (Kinesthetic/long)",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/4qH4unVtJkE"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 33,
+  "fields": {
+    "level": 5,
+    "name": "Difference between Signed magnitude and 2’s complement (Visual/short)",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.geeksforgeeks.org/difference-between-signed-magnitude-and-2s-complement/"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 34,
+  "fields": {
+    "level": 5,
+    "name": "Representation of Negative Binary Numbers (Visual/long))",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.geeksforgeeks.org/representation-of-negative-binary-numbers/"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 35,
+  "fields": {
+    "level": 5,
+    "name": "Signed magnitude (Auditory/short)",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/saZhNTu_dDg"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 36,
+  "fields": {
+    "level": 5,
+    "name": "Signed magnitude (Auditory/long)",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/03et_EgfDb0"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 37,
+  "fields": {
+    "level": 5,
+    "name": "Signed binary numbers (Read/short)",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.tutorialspoint.com/unsigned-and-signed-binary-numbers"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 38,
+  "fields": {
+    "level": 5,
+    "name": "Signed binary numbers (Read/long)",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.electronics-tutorials.ws/binary/signed-binary-numbers.html"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 39,
+  "fields": {
+    "level": 5,
+    "name": "Signed binary numbers (Kinesthetic/short)",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/tCMjsQU3_TM"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 40,
+  "fields": {
+    "level": 5,
+    "name": "Signed binary numbers (Kinesthetic/long)",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/sJXTo3EZoxM"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 41,
+  "fields": {
+    "level": 6,
+    "name": "Binary coded decimal (Visual/short)",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.youtube.com/watch?v=p5VMk2oM8F8"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 42,
+  "fields": {
+    "level": 6,
+    "name": "Binary coded decimal (Visual/long)",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.youtube.com/watch?v=p5VMk2oM8F8"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 43,
+  "fields": {
+    "level": 6,
+    "name": "Binary coded decimal (Auditory/short)",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/OqRkzN02M6E"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 44,
+  "fields": {
+    "level": 6,
+    "name": "Binary coded decimal (Auditory/long)",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/OqRkzN02M6E"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 45,
+  "fields": {
+    "level": 6,
+    "name": "Binary coded decimal (Read/long)",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://cdn.discordapp.com/attachments/931253069373669376/931279215729463338/7_BCD_short2.pdf"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 46,
+  "fields": {
+    "level": 6,
+    "name": "Binary coded decimal (Read/long)",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.electronics-tutorials.ws/binary/binary-coded-decimal.html"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 47,
+  "fields": {
+    "level": 6,
+    "name": "Binary coded decimal (Kinesthetic/short)",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.youtube.com/watch?v=fk2t7BS7POQ"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 48,
+  "fields": {
+    "level": 6,
+    "name": "Binary coded decimal (Kinesthetic/long)",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.youtube.com/watch?v=AM0tr8Kyvzg"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 49,
+  "fields": {
+    "level": 7,
+    "name": "BCD addition (Visual/short)",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://i.ytimg.com/vi/Qc1rco_ES_Y/hqdefault.jpg"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 50,
+  "fields": {
+    "level": 7,
+    "name": "BCD addition (Visual/long)",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://cdn.discordapp.com/attachments/931253069373669376/931280368617783336/bcd_addition_long.png"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 51,
+  "fields": {
+    "level": 7,
+    "name": "BCD Addition (Auditory/short)",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/g6CdaNx9Jes"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 52,
+  "fields": {
+    "level": 7,
+    "name": "BCD Addition (Auditory/long)",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/Q_xFYfI1lSo"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 53,
+  "fields": {
+    "level": 7,
+    "name": "BCD addition (Read/short)",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.includehelp.com/basics/binary-coded-decimal-bcd-code-and-its-addition.aspx"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 54,
+  "fields": {
+    "level": 7,
+    "name": "BCD addition and subtraction (Read/long)",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.electrical4u.com/bcd-or-binary-coded-decimal-bcd-conversion-addition-subtraction/"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 55,
+  "fields": {
+    "level": 7,
+    "name": "BCD Addition (Kinesthetic/short)",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/yPu57aSj9kA"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 56,
+  "fields": {
+    "level": 7,
+    "name": "BCD Addition (Kinesthetic/long)",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/-J-v3CqIpys"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 57,
+  "fields": {
+    "level": 8,
+    "name": "Logic gates (Visual/short)",
+    "material_type": "V",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://cdn.instrumentationtools.com/wp-content/uploads/2017/07/instrumentationtools.com_digital-log"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 58,
+  "fields": {
+    "level": 8,
+    "name": "Logic gates (Visual/long)",
+    "material_type": "V",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.circuitbasics.com/wp-content/uploads/2020/05/image-88.png"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 59,
+  "fields": {
+    "level": 8,
+    "name": "Logic gates (Auditory/short)",
+    "material_type": "A",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/INEtYZqtjTo"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 60,
+  "fields": {
+    "level": 8,
+    "name": "Logic gates (Auditory/long)",
+    "material_type": "A",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/BnB2m1nXZ84"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 61,
+  "fields": {
+    "level": 8,
+    "name": "Logic gates (Read/short)",
+    "material_type": "R",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://www.tutorialspoint.com/computer_logical_organization/logic_gates.htm"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 62,
+  "fields": {
+    "level": 8,
+    "name": "Logic gates (Read/long)",
+    "material_type": "R",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://whatis.techtarget.com/definition/logic-gate-AND-OR-XOR-NOT-NAND-NOR-and-XNOR"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 63,
+  "fields": {
+    "level": 8,
+    "name": "Logic gates (Kinesthetic/short)",
+    "material_type": "K",
+    "material_length": "S",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/-6w-MHjwzT0"
+  }
+},
+{
+  "model": "learning.material",
+  "pk": 64,
+  "fields": {
+    "level": 8,
+    "name": "Logic gates (Kinesthetic/long)",
+    "material_type": "K",
+    "material_length": "L",
+    "uploader": [
+      "admin"
+    ],
+    "link": "https://youtu.be/n1LS6AOoGVo"
+  }
+},
+{
+  "model": "learning.student",
+  "pk": 1,
+  "fields": {
+    "preferred_media": "V",
+    "student_skill": 1.0,
+    "took_quiz": true,
+    "took_poll": true,
+    "learned_material": []
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 1,
+  "fields": {
+    "level": 1,
+    "question": "Which number is a decimal?",
+    "op1": "100",
+    "op2": "E15",
+    "op3": "56",
+    "op4": "A + C",
+    "op5": "I don't know the answer",
+    "answer": "op4"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 2,
+  "fields": {
+    "level": 1,
+    "question": "Which number is an octal?",
+    "op1": "13",
+    "op2": "19",
+    "op3": "990",
+    "op4": "FA",
+    "op5": "I don't know the answer",
+    "answer": "op3"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 3,
+  "fields": {
+    "level": 2,
+    "question": "(1010)₂ in decimal is:",
+    "op1": "(12)₁₀",
+    "op2": "(10)₁₀",
+    "op3": "(10)₁₀",
+    "op4": "(12)₁₀",
+    "op5": "I don't know the answer",
+    "answer": "op3"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 4,
+  "fields": {
+    "level": 2,
+    "question": "(153.5)₁₀ in octal is:",
+    "op1": "(231.4)₈",
+    "op2": "(231.4)₈",
+    "op3": "(241.4)₈",
+    "op4": "(231.8)₈",
+    "op5": "I don't know the answer",
+    "answer": "op1"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 5,
+  "fields": {
+    "level": 3,
+    "question": "(1011)₂ + (0011)₂ =",
+    "op1": "(1110)₂",
+    "op2": "(111)₂",
+    "op3": "(0111)₂",
+    "op4": "(0101)₂",
+    "op5": "I don't know the answer",
+    "answer": "op1"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 6,
+  "fields": {
+    "level": 3,
+    "question": "(-6)₁₀ + (-4)₁₀ in binary is (given that they are 5 bit representations):",
+    "op1": "(10110)₂",
+    "op2": "(00110)₂",
+    "op3": "(10100)₂",
+    "op4": "Overflow",
+    "op5": "I don't know the answer",
+    "answer": "op4"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 7,
+  "fields": {
+    "level": 4,
+    "question": "What is 9's compliment of 6?",
+    "op1": "5",
+    "op2": "3",
+    "op3": "9",
+    "op4": "4",
+    "op5": "I don't know the answer",
+    "answer": "op2"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 8,
+  "fields": {
+    "level": 4,
+    "question": "M - N with complements is:",
+    "op1": "M + 2's comp of N",
+    "op2": "N + 2's comp of M",
+    "op3": "2's comp of M + 2's comp of N",
+    "op4": "M - 2's comp of N",
+    "op5": "I don't know the answer",
+    "answer": "op1"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 9,
+  "fields": {
+    "level": 5,
+    "question": "-7 in signed magnitude is:",
+    "op1": "111",
+    "op2": "0111",
+    "op3": "1111",
+    "op4": "1110",
+    "op5": "I don't know the answer",
+    "answer": "op3"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 10,
+  "fields": {
+    "level": 5,
+    "question": "-3 in signed magnitude is:",
+    "op1": "111",
+    "op2": "1110",
+    "op3": "110",
+    "op4": "1111",
+    "op5": "I don't know the answer",
+    "answer": "op1"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 11,
+  "fields": {
+    "level": 6,
+    "question": "(13) in BCD is:",
+    "op1": "(1011)₂",
+    "op2": "(1111)₂",
+    "op3": "(0001)₂",
+    "op4": "(1101)₂",
+    "op5": "I don't know the answer",
+    "answer": "op4"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 12,
+  "fields": {
+    "level": 6,
+    "question": "(185) in BCD is:",
+    "op1": "(000110000101)₂",
+    "op2": "(100010001011)₂",
+    "op3": "(110011100101)₂",
+    "op4": "None of the above",
+    "op5": "I don't know the answer",
+    "answer": "op1"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 13,
+  "fields": {
+    "level": 7,
+    "question": "(185 + 925) in BCD is:",
+    "op1": "(11100)₂",
+    "op2": "(1010)₂",
+    "op3": "(1110)₂",
+    "op4": "(1010010)₂",
+    "op5": "I don't know the answer",
+    "answer": "op3"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 14,
+  "fields": {
+    "level": 7,
+    "question": "(984 + 599) in BCD is:",
+    "op1": "(1010110010011)₂",
+    "op2": "(1110110000011)₂",
+    "op3": "(1010110000011)₂",
+    "op4": "(1010111000011)₂",
+    "op5": "I don't know the answer",
+    "answer": "op3"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 15,
+  "fields": {
+    "level": 8,
+    "question": "Which one of these operations describes an AND gate?",
+    "op1": "0 AND 0 = 1",
+    "op2": "0 AND 1 = 1",
+    "op3": "0 AND 1 = 0",
+    "op4": "None of the above",
+    "op5": "I don't know the answer",
+    "answer": "op3"
+  }
+},
+{
+  "model": "learning.question",
+  "pk": 16,
+  "fields": {
+    "level": 8,
+    "question": "The output of the gate seen below if A=0 and B=1 is:",
+    "op1": "0",
+    "op2": "1",
+    "op3": "01",
+    "op4": "X",
+    "op5": "I don't know the answer",
+    "answer": "op2"
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 1,
+  "fields": {
+    "poll": "I want to learn about a new project. I would ask for:",
+    "op1": "diagrams to show the project stages with charts of benefits and costs.",
+    "op2": "an opportunity to discuss the project.",
+    "op3": "a written report describing the main features of the project.",
+    "op4": "examples where the project has been used successfully."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 2,
+  "fields": {
+    "poll": "I prefer a presenter or a teacher who uses:",
+    "op1": "diagrams, charts, maps or graphs.",
+    "op2": "question and answer, talk, group discussion, or guest speakers.",
+    "op3": "handouts, books, or readings.",
+    "op4": "demonstrations, models or practical sessions."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 3,
+  "fields": {
+    "poll": "I have finished a competition or test and I would like some feedback. I would like to have feedback:",
+    "op1": "using graphs showing what I achieved.",
+    "op2": "from somebody who talks it through with me.",
+    "op3": "using a written description of my results.",
+    "op4": "using examples from what I have done."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 4,
+  "fields": {
+    "poll": "I want to find out about a house or an apartment. Before visiting it, I would want:",
+    "op1": "a plan showing the rooms and a map of the area.",
+    "op2": "a discussion with the owner.",
+    "op3": "a printed description of the rooms and features.",
+    "op4": "to view a video of the property."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 5,
+  "fields": {
+    "poll": "I want to learn how to play a new board game or card game. I would:",
+    "op1": "use the diagrams that explain the various stages, moves and strategies in the game.",
+    "op2": "listen to somebody explaining it and ask questions.",
+    "op3": "read the instructions.",
+    "op4": "watch others play the game before joining in."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 6,
+  "fields": {
+    "poll": "I want to assemble a wooden table that came in parts (kitset). I would learn best from:",
+    "op1": "diagrams showing each stage of the assembly.",
+    "op2": "advice from someone who has done it before.",
+    "op3": "written instructions that came with the parts for the table.",
+    "op4": "watching a video of a person assembling a similar table."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 7,
+  "fields": {
+    "poll": "I want to learn how to take better photos. I would:",
+    "op1": "use diagrams showing the camera and what each part does.",
+    "op2": "ask questions and talk about the camera and its features.",
+    "op3": "use the written instructions about what to do.",
+    "op4": "use examples of good and poor photos showing how to improve them."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 8,
+  "fields": {
+    "poll": "A website has a video showing how to make a special graph or chart. There is a person speaking, some",
+    "op1": "seeing the diagrams.",
+    "op2": "listening.",
+    "op3": "reading the words.",
+    "op4": "watching the actions."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 9,
+  "fields": {
+    "poll": "When choosing a career or area of study, these are important for me:",
+    "op1": "Working with designs, maps or charts.",
+    "op2": "Communicating with others through discussion.",
+    "op3": "Using words well in written communications.",
+    "op4": "Applying my knowledge in real situations."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 10,
+  "fields": {
+    "poll": "I have a problem with my heart. I would prefer that the doctor:",
+    "op1": "showed me a diagram of what was wrong.",
+    "op2": "described what was wrong.",
+    "op3": "gave me something to read to explain what was wrong.",
+    "op4": "used a plastic model to show me what was wrong."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 11,
+  "fields": {
+    "poll": "When learning from the Internet I like:",
+    "op1": "interesting design and visual features.",
+    "op2": "audio channels where I can listen to podcasts or interviews.",
+    "op3": "interesting written descriptions, lists and explanations.",
+    "op4": "videos showing how to do or make things."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 12,
+  "fields": {
+    "poll": "When I am learning I:",
+    "op1": "see patterns in things.",
+    "op2": "like to talk things through.",
+    "op3": "read books, articles and handouts.",
+    "op4": "use examples and applications."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 13,
+  "fields": {
+    "poll": "I want to find out more about a tour that I am going on. I would:",
+    "op1": "use a map and see where the places are.",
+    "op2": "talk with the person who planned the tour or others who are going on the tour.",
+    "op3": "read about the tour on the travel document.",
+    "op4": "look at details about the highlights and activities on the tour."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 14,
+  "fields": {
+    "poll": "I want to save more money and to decide between a range of options. I would:",
+    "op1": "use graphs showing different options for different time periods.",
+    "op2": "talk with an expert about the options.",
+    "op3": "read a print brochure that describes the options in detail.",
+    "op4": "consider examples of each option using my financial information."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 15,
+  "fields": {
+    "poll": "I want to learn to do something new on a computer. I would:",
+    "op1": "follow the diagrams in a book.",
+    "op2": "talk with people who know about the program.",
+    "op3": "read the written instructions that came with the program.",
+    "op4": "start using it and learn by trial and error."
+  }
+},
+{
+  "model": "learning.poll",
+  "pk": 16,
+  "fields": {
+    "poll": "I need to find the way to a shop that a friend has recommended. I would:",
+    "op1": "use a map.",
+    "op2": "ask my friend to tell me the directions.",
+    "op3": "write down the street directions I need to remember.",
+    "op4": "find out where the shop is in relation to somewhere I know."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 208,
+  "fields": {
+    "action_time": "2022-01-17T21:07:25.450Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "2",
+    "object_repr": "Which number is an octal?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Op1\", \"Op3\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 209,
+  "fields": {
+    "action_time": "2022-01-17T21:07:46.437Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "3",
+    "object_repr": "(1010)₂ in decimal is:",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Question\", \"Op1\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 210,
+  "fields": {
+    "action_time": "2022-01-17T22:33:46.947Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "student"
+    ],
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 211,
+  "fields": {
+    "action_time": "2022-01-17T22:35:37.435Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "3",
+    "object_repr": "(1010)₂ in decimal is:",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Op2\", \"Op3\", \"Op4\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 212,
+  "fields": {
+    "action_time": "2022-01-17T22:38:36.247Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "4",
+    "object_repr": "(153.5)₁₀ in octal is:",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Question\", \"Op1\", \"Op2\", \"Op3\", \"Op4\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 213,
+  "fields": {
+    "action_time": "2022-01-17T22:38:57.017Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "5",
+    "object_repr": "(1011)₂ + (0011)₂ =",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Question\", \"Op1\", \"Op2\", \"Op3\", \"Op4\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 214,
+  "fields": {
+    "action_time": "2022-01-17T22:47:01.051Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "6",
+    "object_repr": "(-6)₁₀ + (-4)₁₀ in binary is (given that they are 5 bit representations):",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Question\", \"Op1\", \"Op2\", \"Op3\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 215,
+  "fields": {
+    "action_time": "2022-01-17T22:47:17.958Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "7",
+    "object_repr": "What is 9's compliment of 6?",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 216,
+  "fields": {
+    "action_time": "2022-01-17T22:48:43.764Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "9",
+    "object_repr": "-7 in signed magnitude is:",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 217,
+  "fields": {
+    "action_time": "2022-01-17T22:48:49.207Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "10",
+    "object_repr": "-3 in signed magnitude is:",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 218,
+  "fields": {
+    "action_time": "2022-01-17T22:48:55.393Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "11",
+    "object_repr": "(13) in BCD is:",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 219,
+  "fields": {
+    "action_time": "2022-01-17T22:49:04.496Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "12",
+    "object_repr": "(185) in BCD is:",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Op1\", \"Op2\", \"Op3\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 220,
+  "fields": {
+    "action_time": "2022-01-17T22:49:24.536Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "11",
+    "object_repr": "(13) in BCD is:",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Op1\", \"Op2\", \"Op3\", \"Op4\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 221,
+  "fields": {
+    "action_time": "2022-01-17T22:49:30.612Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "7",
+    "object_repr": "What is 9's compliment of 6?",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 222,
+  "fields": {
+    "action_time": "2022-01-17T22:49:48.495Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "14",
+    "object_repr": "(984 + 599) in BCD is:",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Op1\", \"Op2\", \"Op3\", \"Op4\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 223,
+  "fields": {
+    "action_time": "2022-01-17T22:49:55.225Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "13",
+    "object_repr": "(185 + 925) in BCD is:",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Op1\", \"Op2\", \"Op3\", \"Op4\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 224,
+  "fields": {
+    "action_time": "2022-01-17T22:50:00.122Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "15",
+    "object_repr": "Which one of these operations describes an AND gate?",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 225,
+  "fields": {
+    "action_time": "2022-01-17T22:50:08.386Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "learning",
+      "question"
+    ],
+    "object_id": "16",
+    "object_repr": "The output of the gate seen below if A=0 and B=1 is:",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+}
+]
