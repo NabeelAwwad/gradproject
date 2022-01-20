@@ -98,7 +98,7 @@ def home(request):
             'preference': preference,
             'took_quiz': request.user.student.took_quiz,
             'took_poll': request.user.student.took_poll,
-            'passed_topics_percent': len(passed_topics_list)*12.5,
+            'passed_topics_percent': len(passed_topics_list) * 12.5,
         }
         return render(request, 'home.html', context)
 
@@ -372,8 +372,49 @@ def about(request):
 
 @login_required
 def rating(request):
+    question_dict = {
+        'qa': "The website was very easy to use.",
+        'qb': "The website's interface had fitting colors and was organized.",
+        'qc': "This implementation of the idea of a recommender system was very well done.",
+        'qd': "The material recommended to me helped"
+              " me better understand the subject of digital systems and its topics.",
+        'qe': "I feel like the material suggested covered many of the topics in digital systems very well.",
+        'qf': "The learning preference recommended to me was very fitting to me and how I prefer to learn.",
+        'qg': "I think that the quiz's questions evaluated my knowledge of the topics very well.",
+        'qh': "After I finished studying the topics, I prefer this way of learning by recommendations over"
+              "the usual way.",
+        'qi': "I think that the system adapted to my knowledge gain very well.",
+        'qj': "I would want to see a website like this on a bigger scale in the future.",
+        'qk': "I believe that the word 'soon' has 4 letters in it."
+    }
+    student = request.user.student
+    if request.method == 'POST':
+        unanswered = 0
+        for q in question_dict:
+            if request.POST.get(q) is None:
+                unanswered += 1
+
+        if unanswered > 0:
+            messages.error(request, "Please answer all of the questions.")
+            return redirect("rating")
+
+        student.ratings = ''
+        for q in question_dict:
+            if request.POST.get(q) == 'op1':
+                student.ratings = student.ratings + '1'
+            elif request.POST.get(q) == 'op2':
+                student.ratings = student.ratings + '2'
+            elif request.POST.get(q) == 'op3':
+                student.ratings = student.ratings + '3'
+            elif request.POST.get(q) == 'op4':
+                student.ratings = student.ratings + '4'
+            elif request.POST.get(q) == 'op5':
+                student.ratings = student.ratings + '5'
+        student.save()
+        return redirect('home')
     context = {
         'took_quiz': request.user.student.took_quiz,
         'took_poll': request.user.student.took_poll,
+        'question_dict': question_dict.items(),
     }
     return render(request, 'rating.html', context)

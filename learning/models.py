@@ -64,7 +64,7 @@ class Poll(models.Model):
 
 
 class Material(models.Model):
-    topic = models.ForeignKey(Topic, on_delete=models.DO_NOTHING)
+    topic = models.ForeignKey(Topic, on_delete=models.DO_NOTHING, default=1)
     name = models.CharField(max_length=100)
     material_type = models.CharField(max_length=1, choices=MATERIAL_TYPES)
     material_length = models.CharField(max_length=1, choices=MATERIAL_LENGTH)
@@ -82,13 +82,14 @@ class Student(models.Model):
     passed_topics = models.ManyToManyField(Topic, blank=True)
     took_quiz = models.BooleanField(default=False)
     took_poll = models.BooleanField(default=False)
+    ratings = models.CharField(max_length=15, blank=True)
 
     def __str__(self):
         return self.user.username
 
 
 class Question(models.Model):
-    topic = models.ForeignKey(Topic, on_delete=models.DO_NOTHING)
+    topic = models.ForeignKey(Topic, on_delete=models.DO_NOTHING, default=1)
     question = models.CharField(max_length=200)
     op1 = models.CharField(max_length=100)
     op2 = models.CharField(max_length=100)
@@ -102,7 +103,7 @@ class Question(models.Model):
 
 
 class Score(models.Model):
-    topic = models.ForeignKey(Topic, on_delete=models.DO_NOTHING)
+    topic = models.ForeignKey(Topic, on_delete=models.DO_NOTHING, default=1)
     student = models.ForeignKey(Student, on_delete=models.CASCADE)
     score = models.IntegerField(default=0)
 
