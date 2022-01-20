@@ -1,18 +1,18 @@
 {% extends 'base.html' %}
 {% load crispy_forms_filters %}
 {% block content %}
-  <h2 class="display-6">Teacher Sign up</h2>
+    <h2 class="display-6">Teacher Sign up</h2>
     <form method="post">
-   {% csrf_token %}
-   {% for field in user_form %}
+        {% csrf_token %}
+        {% for field in user_form %}
             <p class="lead"><strong>
                 {{ field.label_tag }}<br>
                 {{ field }}<br>
             </strong></p>
-                {% if field.help_text %}
-                    <p><strong><small>{{ field.help_text }}</small></strong></p>
-                {% endif %}
+            {% if field.help_text %}
+                <p><strong><small>{{ field.help_text }}</small></strong></p>
+            {% endif %}
         {% endfor %}
         <button type="submit" class="btn btn-success">Sign Up</button>
-</form>
+    </form>
 {% endblock %}

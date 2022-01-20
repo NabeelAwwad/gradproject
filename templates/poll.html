@@ -1,56 +1,79 @@
 {% extends 'base.html' %}
 {% block content %}
-        <h1 class="display-5">Learning preference</h1>
-        <p class="lead"><strong>Please choose the best answers that you find most fitting. You can answer
-            multiple choices if a single choice doesn't match your preference.
-        </strong>
-        </p>
+    <h1 class="display-5">Learning preference</h1>
+    <p class="lead"><strong>Please choose the best answers that you find most fitting. You can answer
+        multiple choices if a single choice doesn't match your preference.
+    </strong>
+    </p>
 
-        <form method='post' novalidate>
-            {% csrf_token %}
-            {% if messages %}
+    <form method='post' novalidate>
+        {% csrf_token %}
+        {% if messages %}
             {% for message in messages %}
                 <div class="alert {{ message.tags }} m-2" id="msg" role="alert">
                     {{ message }}
                 </div>
             {% endfor %}
-            {% endif %}
-            {% for p  in polls %}
-                <div class="form-group">
-                    <label for="poll">{{ forloop.counter }}) {{ p.poll }}</label>
+        {% endif %}
+        {% for p  in polls %}
+            <div class="form-group">
+                <label for="poll">{{ forloop.counter }}) {{ p.poll }}</label>
+            </div>
+            <div class="form-check">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="{{ p.poll }}" id="{{ p.id }}1" value='op1'>
+                    <label class="form-check-label" for="{{ p.id }}1">
+                        {{ p.op1 }}
+                    </label>
                 </div>
                 <div class="form-check">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="{{ p.poll }}" id="{{ p.id }}1" value='op1'>
-                        <label class="form-check-label" for="{{ p.id }}1">
-                            {{ p.op1 }}
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="{{ p.poll }}" id="{{ p.id }}2" value='op2'>
-                        <label class="form-check-label" for="{{ p.id }}2">
-                            {{ p.op2 }}
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="{{ p.poll }}" id="{{ p.id }}3" value='op3'>
-                        <label class="form-check-label" for="{{ p.id }}3">
-                            {{ p.op3 }}
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="{{ p.poll }}" id="{{ p.id }}4" value='op4'>
-                        <label class="form-check-label" for="{{ p.id }}4">
-                            {{ p.op4 }}
-                        </label>
-                    </div>
-                    <br>
+                    <input class="form-check-input" type="checkbox" name="{{ p.poll }}" id="{{ p.id }}2" value='op2'>
+                    <label class="form-check-label" for="{{ p.id }}2">
+                        {{ p.op2 }}
+                    </label>
                 </div>
-            {% endfor %}
-            {% if not not_first_time %}
-            <button type="submit" class="btn btn-success btn-lg">Finish and Continue</button>
-            {% else %}
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="{{ p.poll }}" id="{{ p.id }}3" value='op3'>
+                    <label class="form-check-label" for="{{ p.id }}3">
+                        {{ p.op3 }}
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="{{ p.poll }}" id="{{ p.id }}4" value='op4'>
+                    <label class="form-check-label" for="{{ p.id }}4">
+                        {{ p.op4 }}
+                    </label>
+                </div>
+                <br>
+            </div>
+        {% endfor %}
+        {% if took_poll %}
             <button type="submit" class="btn btn-success">Submit and return</button>
-            {% endif %}
-        </form>
+        {% else %}
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#pollModal">
+                Finish and Continue
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="pollModal" tabindex="-1" aria-labelledby="pollModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="pollModalLabel">Finish and Continue to quiz</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                             Please make sure that you have answered at least 12 questions.
+                            This action will redirect you to the quiz page. Are you sure you want to proceed?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-success">Yes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </form>
 {% endblock %}

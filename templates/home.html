@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
     <style>
-    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700');
+        @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700');
     </style>
     <div class="card float-end bg-gradiant rounded border-2" style="width: 18rem;background-color: rgba(253, 197, 245, 0.4);
     font-family: 'Josefin Sans', sans-serif">
@@ -12,10 +12,16 @@
                     <h6>Preference: {{ preference }}</h6>
                 </div>
                 <div>
-                    {% if not current_topics %}
+                    {% if passed_topics_percent == 100 %}
                         <h6>There are no topics left to cover.</h6>
-                        {% else %}
-                        <h6>Current topics: {{ current_topics }}</h6>
+                    {% else %}
+                        <h6>Progress:</h6>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: {{ passed_topics_percent }}%;"
+                                 aria-valuenow="{{ passed_topics_percent }}"
+                                 aria-valuemin="0" aria-valuemax="100">{{ passed_topics_percent }}%
+                            </div>
+                        </div>
                     {% endif %}
                 </div>
             </div>
@@ -23,51 +29,82 @@
     </div>
     <h1 class="display-4">Current recommendations</h1>
     <form method="post">
-    {% csrf_token %}
-    {% if not materials and not misconceptions %}
-        <a href="{% url 'quiz' %}" class="btn btn-lg btn-secondary">Retake Quiz?</a>
-    {% endif %}
-    {% if not materials %}
-    <p class="lead"><strong>You have finished all of the material available to you.
-
-    </strong></p>
-    {% else %}
-    {% for mat in materials %}
-        <ul>
-            <li>
-            <p class="lead"><strong>{{ mat.name }}</strong></p>
-            <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer" class="btn btn-md btn-primary">Link</a>
-                <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as finished</button>
-            </li>
-        </ul>
-    {% endfor %}
-    {% endif %}
-    <h1 class="display-4">Extras</h1>
-    {% if not misconceptions %}
-        <p class="lead"><strong>We found that you do not need any extra material to revise</strong></p>
-    {% else %}
-    <p class="lead"><strong>We noticed that you might have some misconceptions, here are some short recommendations to help you
-        revise:</strong></p>
-    {% for mat in misconceptions %}
-        {% if mat not in learned %}
-        <ul>
-            <li>
-            <p class="lead"><strong>{{ mat.name }}</strong></p>
-            <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer" class="btn btn-md btn-primary">Link</a>
-                <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as finished</button>
-            </li>
+        {% csrf_token %}
+        {% if not materials and not misconceptions %}
+            <a href="{% url 'rating' %}" class="btn btn-lg btn-warning">Rate your experience</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="modal" data-bs-target="#quizModal">
+                Retake Quiz
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="quizModal" tabindex="-1" aria-labelledby="quizModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="quizModalLabel">Retake Quiz</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            This action will reset all of the material you have finished and set you back
+                            to the starting point. Are you sure you want to continue?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <a href="{% url 'quiz' %}" class="btn btn-success">Yes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         {% endif %}
-        </ul>
-    {% endfor %}
-    {% endif %}
+        {% if not materials %}
+            <p class="lead"><strong>You have finished all of the material available to you.
+
+            </strong></p>
+        {% else %}
+            {% for mat in materials %}
+                <ul>
+                    <li>
+                        <p class="lead"><strong>{{ mat.name }}</strong></p>
+                        <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer"
+                           class="btn btn-md btn-primary">Link</a>
+                        <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as
+                            finished
+                        </button>
+                    </li>
+                </ul>
+            {% endfor %}
+        {% endif %}
+        <h1 class="display-4">Extras</h1>
+        {% if not misconceptions %}
+            <p class="lead"><strong>We found that you do not need any extra material to revise</strong></p>
+        {% else %}
+            <p class="lead"><strong>We noticed that you might have some misconceptions, here are some short
+                recommendations to help you
+                revise:</strong></p>
+            {% for mat in misconceptions %}
+                {% if mat not in learned %}
+                    <ul>
+                    <li>
+                        <p class="lead"><strong>{{ mat.name }}</strong></p>
+                        <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer"
+                           class="btn btn-md btn-primary">Link</a>
+                        <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as
+                            finished
+                        </button>
+                    </li>
+                {% endif %}
+            </ul>
+            {% endfor %}
+        {% endif %}
     </form>
     {% if not learned %}
-    <br>
+        <br>
     {% else %}
-    <h2 class="display-4">Finished material</h2>
+        <h2 class="display-4">Finished material</h2>
         <p class="lead"><strong>Here are the material that you have finished so far:</strong></p>
-    {% for mat in learned %}
-        <p class="lead"><strong>✓ {{ mat.name }}</strong></p>
-    {% endfor %}
+        {% for mat in learned %}
+            <p class="lead"><strong>✓ {{ mat.name }}</strong></p>
+        {% endfor %}
     {% endif %}
 {% endblock %}

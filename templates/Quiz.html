@@ -1,68 +1,90 @@
 {% extends 'base.html' %}
 {% block content %}
-        <h1 class="display-5">Digital systems quiz</h1>
-        <p class="lead"><strong>Please choose the best answer that you find most fitting. In case you do not know the
-            answer, choose the last option.
-        </strong>
-        </p>
-        <form method='post' action=''>
-            {% csrf_token %}
-            {% if messages %}
+    <h1 class="display-5">Digital systems quiz</h1>
+    <p class="lead"><strong>Please choose the best answer that you find most fitting. In case you do not know the
+        answer, choose the last option.
+    </strong>
+    </p>
+    <form method='post' action=''>
+        {% csrf_token %}
+        {% if messages %}
             {% for message in messages %}
                 <div class="alert {{ message.tags }} m-2" id="msg" role="alert">
                     {{ message }}
                 </div>
             {% endfor %}
-            {% endif %}
-            {% for q  in questions %}
-                <div class="form-group">
-                    <label for="question">{{ forloop.counter }}) {{ q.question }}</label>
+        {% endif %}
+        {% for q  in questions %}
+            <div class="form-group">
+                <label for="question">{{ forloop.counter }}) {{ q.question }}</label>
+            </div>
+            <div class="form-check">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="{{ q.question }}" id="{{ q.id }}1"
+                           value='op1'>
+                    <label class="form-check-label" for="{{ q.id }}1">
+                        a) {{ q.op1 }}
+                    </label>
                 </div>
                 <div class="form-check">
-                    <div class="form-check">
-
-                        <input class="form-check-input" type="radio" name="{{ q.question }}" id="{{ q.id }}1"
-                               value='op1'>
-                        <label class="form-check-label" for="{{ q.id }}1">
-                            a)   {{ q.op1 }}
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="{{ q.question }}" id="{{ q.id }}2"
-                               value='op2'>
-                        <label class="form-check-label" for="{{ q.id }}2">
-                            b)   {{ q.op2 }}
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="{{ q.question }}" id="{{ q.id }}3"
-                               value='op3'>
-                        <label class="form-check-label" for="{{ q.id }}3">
-                            c)   {{ q.op3 }}
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="{{ q.question }}" id="{{ q.id }}4"
-                               value='op4'>
-                        <label class="form-check-label" for="{{ q.id }}4">
-                            d)   {{ q.op4 }}
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="{{ q.question }}" id="{{ q.id }}5"
-                               value='op5'>
-                        <label class="form-check-label" for="{{ q.id }}5">
-                            e)   {{ q.op5 }}
-                        </label>
-                    </div>
-                    {% if q.id == 16 %}
-                        <img src="https://cdn.discordapp.com/attachments/887016921705349190/928352714889519204/Xor-gate-en.svg.png" alt="gate"
-                        width="300" height="100">
-                    {% endif %}
-                    <br>
+                    <input class="form-check-input" type="radio" name="{{ q.question }}" id="{{ q.id }}2"
+                           value='op2'>
+                    <label class="form-check-label" for="{{ q.id }}2">
+                        b) {{ q.op2 }}
+                    </label>
                 </div>
-            {% endfor %}
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="{{ q.question }}" id="{{ q.id }}3"
+                           value='op3'>
+                    <label class="form-check-label" for="{{ q.id }}3">
+                        c) {{ q.op3 }}
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="{{ q.question }}" id="{{ q.id }}4"
+                           value='op4'>
+                    <label class="form-check-label" for="{{ q.id }}4">
+                        d) {{ q.op4 }}
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="{{ q.question }}" id="{{ q.id }}5"
+                           value='op5'>
+                    <label class="form-check-label" for="{{ q.id }}5">
+                        e) {{ q.op5 }}
+                    </label>
+                </div>
+                {% if q.id == 16 %}
+                    <img src="https://cdn.discordapp.com/attachments/887016921705349190/928352714889519204/Xor-gate-en.svg.png"
+                         alt="gate"
+                         width="300" height="100">
+                {% endif %}
+                <br>
+            </div>
+        {% endfor %}
         <br>
-            <button type="submit" class="btn btn-success btn-lg">Finish and submit</button>
-        </form>
+        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#quizModal">
+            Finish and submit
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="quizModal" tabindex="-1" aria-labelledby="quizModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="quizModalLabel">Finish and continue to the main page</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Please make sure that you have answered all the questions.
+                        This action will redirect you to the main page. Are you sure you want to proceed?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-success">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 {% endblock %}

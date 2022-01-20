@@ -15,9 +15,9 @@
                 {{ field.label_tag }}<br>
                 {{ field }}<br>
             </strong></p>
-                {% if field.help_text %}
-                    <p><strong><small>{{ field.help_text }}</small></strong></p>
-                {% endif %}
+            {% if field.help_text %}
+                <p><strong><small>{{ field.help_text }}</small></strong></p>
+            {% endif %}
         {% endfor %}
         <button type="submit" class="btn btn-success">Update</button>
     </form>

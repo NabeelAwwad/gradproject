@@ -1,24 +1,24 @@
 {% extends 'base.html' %}
 {% block content %}
     <div class="d-flex justify-content-between">
-    <h1 class="display-5">Digital systems learning recommendations</h1>
-    <form method="post" novalidate>
-        {% csrf_token %}
-        {% if messages %}
-            {% for message in messages %}
-                <div class="alert {{ message.tags }} m-2" id="msg" role="alert">
-                    {{ message }}
-                </div>
+        <h1 class="display-5">Digital systems learning recommendations</h1>
+        <form method="post" novalidate>
+            {% csrf_token %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert {{ message.tags }} m-2" id="msg" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+            {% for field in auth_form %}
+                <p class="lead"><strong>
+                    {{ field.label_tag }}<br>
+                    {{ field }}<br>
+                </strong></p>
             {% endfor %}
-        {% endif %}
-        {% for field in auth_form %}
-            <p class="lead"><strong>
-                {{ field.label_tag }}<br>
-                {{ field }}<br>
-            </strong></p>
-    {% endfor %}
-    <button type="submit" class="btn btn-success btn-lg">Sign In</button>
-    <a href="{% url "register" %}" class="btn btn-md btn-secondary">Sign Up</a>
-    </form>
+            <button type="submit" class="btn btn-success btn-lg">Sign In</button>
+            <a href="{% url "register" %}" class="btn btn-md btn-secondary">Sign Up</a>
+        </form>
     </div>
 {% endblock %}

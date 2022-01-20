@@ -72,10 +72,9 @@ def home(request):
     for mat in learned:
         materials = materials.exclude(name__exact=mat.name)
         misconceptions = misconceptions.exclude(name__exact=mat.name)
-    current_topics_list = []
-    for topic in current_topics.all():
-        current_topics_list.append(topic.name)
-
+    passed_topics_list = []
+    for topic in student.passed_topics.all():
+        passed_topics_list.append(topic.name)
     # if not materials and student.student_skill != 9:
     #     student.student_skill += 1
     #     student.save()
@@ -99,7 +98,7 @@ def home(request):
             'preference': preference,
             'took_quiz': request.user.student.took_quiz,
             'took_poll': request.user.student.took_poll,
-            'current_topics': current_topics_list,
+            'passed_topics_percent': len(passed_topics_list)*12.5,
         }
         return render(request, 'home.html', context)
 
@@ -369,3 +368,12 @@ def about(request):
     else:
         context = {}
     return render(request, "about.html", context)
+
+
+@login_required
+def rating(request):
+    context = {
+        'took_quiz': request.user.student.took_quiz,
+        'took_poll': request.user.student.took_poll,
+    }
+    return render(request, 'rating.html', context)
