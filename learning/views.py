@@ -37,8 +37,22 @@ def home(request):
     #     student.passed_topics.add
     for topic in Topic.objects.all():
         learned_set = set(learned.values_list('id', flat=True))
-        materials_set = set(mat_pref.filter(topic=topic, material_length='L').values_list('id', flat=True))
-        if materials_set.issubset(learned_set):
+        materials_set_v = set(
+            mat_pref.filter(topic=topic, material_length='L', material_type__exact='V').values_list('id', flat=True))
+        materials_set_a = set(
+            mat_pref.filter(topic=topic, material_length='L', material_type__exact='A').values_list('id', flat=True))
+        materials_set_r = set(
+            mat_pref.filter(topic=topic, material_length='L', material_type__exact='R').values_list('id', flat=True))
+        materials_set_k = set(
+            mat_pref.filter(topic=topic, material_length='L', material_type__exact='K').values_list('id', flat=True))
+        print(materials_set_v)
+        print(materials_set_a)
+        print(materials_set_r)
+        print(materials_set_k)
+        if (materials_set_v.issubset(learned_set) and len(materials_set_v) != 0) or (
+                materials_set_a.issubset(learned_set) and len(materials_set_a) != 0) or (
+                materials_set_r.issubset(learned_set) and len(materials_set_r) != 0) or (
+                materials_set_k.issubset(learned_set) and len(materials_set_k) != 0):
             student.passed_topics.add(topic)
 
     current_topics = Topic.objects.filter(Q(dependencies__in=student.passed_topics.all()))
@@ -79,6 +93,14 @@ def home(request):
     #     student.student_skill += 1
     #     student.save()
     #     return redirect('home')
+    materials_v = materials.filter( material_length='L', material_type__exact='V')
+    materials_a = materials.filter(material_length='L', material_type__exact='A')
+    materials_r = materials.filter(material_length='L', material_type__exact='R')
+    materials_k = materials.filter(material_length='L', material_type__exact='K')
+    misconceptions_v = misconceptions.filter(material_length='S', material_type__exact='V')
+    misconceptions_a = misconceptions.filter(material_length='S', material_type__exact='A')
+    misconceptions_r = misconceptions.filter(material_length='S', material_type__exact='R')
+    misconceptions_k = misconceptions.filter(material_length='S', material_type__exact='K')
 
     if request.method == 'POST':
         for mat in materials:
@@ -92,8 +114,14 @@ def home(request):
     else:
         learned = student.learned_material.all()
         context = {
-            'materials': materials,
-            'misconceptions': misconceptions,
+            'materials_v': materials_v,
+            'misconceptions_v': misconceptions_v,
+            'materials_a': materials_a,
+            'misconceptions_a': misconceptions_a,
+            'materials_r': materials_r,
+            'misconceptions_r': misconceptions_r,
+            'materials_k': materials_k,
+            'misconceptions_k': misconceptions_k,
             'learned': learned,
             'preference': preference,
             'took_quiz': request.user.student.took_quiz,

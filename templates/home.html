@@ -12,10 +12,16 @@
                     <h6>Preference: {{ preference }}</h6>
                 </div>
                 <div>
+                    <h6>Progress:</h6>
                     {% if passed_topics_percent == 100 %}
-                        <h6>There are no topics left to cover.</h6>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar"
+                                 style="width: {{ passed_topics_percent }}%;"
+                                 aria-valuenow="{{ passed_topics_percent }}"
+                                 aria-valuemin="0" aria-valuemax="100">{{ passed_topics_percent }}%
+                            </div>
+                        </div>
                     {% else %}
-                        <h6>Progress:</h6>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" style="width: {{ passed_topics_percent }}%;"
                                  aria-valuenow="{{ passed_topics_percent }}"
@@ -30,7 +36,7 @@
     <h1 class="display-4">Current recommendations</h1>
     <form method="post">
         {% csrf_token %}
-        {% if not materials and not misconceptions %}
+        {% if not materials_v and not misconceptions_v and not materials_a and not misconceptions_a and not materials_r and not misconceptions_r and not materials_k and not misconceptions_k %}
             <a href="{% url 'rating' %}" class="btn btn-lg btn-warning">Rate your experience</a>
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="modal" data-bs-target="#quizModal">
@@ -57,49 +63,166 @@
                 </div>
             </div>
         {% endif %}
-        {% if not materials %}
+        <p class="lead"><strong>These are the learning materials we recommend you study right now.</strong></p>
+        <p class="lead"><strong>Please click on the link button to access that material's page.</strong></p>
+        <p class="lead"><strong>Once you are finished with it and think you can continue, press on the
+            "Mark as finished" button to progress.</strong></p>
+        <p class="lead"><strong>
+            NOTE: You only need to mark the materials from a specific preference as finished to progress.</strong></p>
+        <hr>
+        {% if not materials_v and not materials_a and not materials_r and not materials_v %}
             <p class="lead"><strong>You have finished all of the material available to you.
 
             </strong></p>
         {% else %}
-            {% for mat in materials %}
-                <ul>
-                    <li>
-                        <p class="lead"><strong>{{ mat.name }}</strong></p>
-                        <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer"
-                           class="btn btn-md btn-primary">Link</a>
-                        <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as
-                            finished
-                        </button>
-                    </li>
-                </ul>
-            {% endfor %}
+            {% if not materials_v %}
+            {% else %}
+                <h1 class="display-6">Visual</h1>
+                {% for mat in materials_v %}
+                    <ul>
+                        <li>
+                            <p class="lead"><strong>{{ mat.name }}</strong></p>
+                            <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer"
+                               class="btn btn-md btn-primary">Link</a>
+                            <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as
+                                finished
+                            </button>
+                        </li>
+                    </ul>
+                {% endfor %}
+            {% endif %}
+            <hr>
+            {% if not materials_a %}
+            {% else %}
+                <h1 class="display-6">Auditory</h1>
+                {% for mat in materials_a %}
+                    <ul>
+                        <li>
+                            <p class="lead"><strong>{{ mat.name }}</strong></p>
+                            <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer"
+                               class="btn btn-md btn-primary">Link</a>
+                            <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as
+                                finished
+                            </button>
+                        </li>
+                    </ul>
+                {% endfor %}
+                <hr>
+            {% endif %}
+            {% if not materials_r %}
+            {% else %}
+                <h1 class="display-6">Read/Write</h1>
+                {% for mat in materials_r %}
+                    <ul>
+                        <li>
+                            <p class="lead"><strong>{{ mat.name }}</strong></p>
+                            <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer"
+                               class="btn btn-md btn-primary">Link</a>
+                            <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as
+                                finished
+                            </button>
+                        </li>
+                    </ul>
+                {% endfor %}
+                <hr>
+            {% endif %}
+            {% if not materials_k %}
+            {% else %}
+                <h1 class="display-6">Kinesthetic</h1>
+                {% for mat in materials_k %}
+                    <ul>
+                        <li>
+                            <p class="lead"><strong>{{ mat.name }}</strong></p>
+                            <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer"
+                               class="btn btn-md btn-primary">Link</a>
+                            <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as
+                                finished
+                            </button>
+                        </li>
+                    </ul>
+                {% endfor %}
+                <hr>
+            {% endif %}
         {% endif %}
         <h1 class="display-4">Extras</h1>
-        {% if not misconceptions %}
+        {% if not misconceptions_v and not misconceptions_a and not misconceptions_r and not misconceptions_k %}
             <p class="lead"><strong>We found that you do not need any extra material to revise</strong></p>
         {% else %}
             <p class="lead"><strong>We noticed that you might have some misconceptions, here are some short
                 recommendations to help you
                 revise:</strong></p>
-            {% for mat in misconceptions %}
-                {% if mat not in learned %}
+            {% if not misconceptions_v %}
+                <br>
+            {% else %}
+                <h1 class="display-6">Visual</h1>
+                {% for mat in misconceptions_v %}
                     <ul>
-                    <li>
-                        <p class="lead"><strong>{{ mat.name }}</strong></p>
-                        <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer"
-                           class="btn btn-md btn-primary">Link</a>
-                        <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as
-                            finished
-                        </button>
-                    </li>
-                {% endif %}
-            </ul>
-            {% endfor %}
+                        <li>
+                            <p class="lead"><strong>{{ mat.name }}</strong></p>
+                            <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer"
+                               class="btn btn-md btn-primary">Link</a>
+                            <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as
+                                finished
+                            </button>
+                        </li>
+                    </ul>
+                {% endfor %}
+                <hr>
+            {% endif %}
+            {% if not misconceptions_a %}
+            {% else %}
+                <h1 class="display-6">Auditory</h1>
+                {% for mat in misconceptions_a %}
+                    <ul>
+                        <li>
+                            <p class="lead"><strong>{{ mat.name }}</strong></p>
+                            <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer"
+                               class="btn btn-md btn-primary">Link</a>
+                            <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as
+                                finished
+                            </button>
+                        </li>
+                    </ul>
+                {% endfor %}
+                <hr>
+            {% endif %}
+            {% if not misconceptions_r %}
+            {% else %}
+                <h1 class="display-6">Read/Write</h1>
+                {% for mat in misconceptions_r %}
+                    <ul>
+                        <li>
+                            <p class="lead"><strong>{{ mat.name }}</strong></p>
+                            <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer"
+                               class="btn btn-md btn-primary">Link</a>
+                            <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as
+                                finished
+                            </button>
+                        </li>
+                    </ul>
+                {% endfor %}
+                <hr>
+            {% endif %}
+            {% if not misconceptions_k %}
+            {% else %}
+                <h1 class="display-6">Kinesthetic</h1>
+                {% for mat in misconceptions_k %}
+                    <ul>
+                        <li>
+                            <p class="lead"><strong>{{ mat.name }}</strong></p>
+                            <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer"
+                               class="btn btn-md btn-primary">Link</a>
+                            <button type="submit" name="{{ mat.name }}" class="btn btn-success btn-sm ms-1">✓ Mark as
+                                finished
+                            </button>
+                        </li>
+                    </ul>
+                {% endfor %}
+            {% endif %}
+            <hr>
         {% endif %}
     </form>
     {% if not learned %}
-        <br>
     {% else %}
         <h2 class="display-4">Finished material</h2>
         <p class="lead"><strong>Here are the material that you have finished so far:</strong></p>
